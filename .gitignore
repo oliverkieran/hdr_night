@@ -1,0 +1,10 @@
+# Ignore all images
+raw_images_night/
+raw_images/
+.idea/
+raw_images_old/
+*.DS_Store
+*.png
+learned_isp/results/
+DPED/results/
+learned_isp_night/results/
