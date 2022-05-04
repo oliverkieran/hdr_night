@@ -1,0 +1,380 @@
+2021-06-17 17:51:53.111712: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+The following parameters will be applied for training:
+Model architecture: punet
+Restore Iteration: 0
+Batch size: 32
+Training size: 5000
+Learning rate: 0.0001
+Training iterations: 100000
+Evaluation step: 1000
+Path to the dataset: ../raw_images_night/crops_night/
+Path to Raw-to-RGB model network: learning_R_5e-05_RI_0/
+Path to result images: results/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Path to RGB data from DSLR: fujifilm/
+Path to Raw data from phone: mediatek_raw
+num_input_images: 3
+2021-06-17 17:51:59.109674: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-17 17:51:59.111601: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-17 17:51:59.143544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:09:00.0 name: GeForce GTX TITAN X computeCapability: 5.2
+coreClock: 1.076GHz coreCount: 24 deviceMemorySize: 11.93GiB deviceMemoryBandwidth: 313.37GiB/s
+2021-06-17 17:51:59.144862: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-17 17:51:59.149617: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-17 17:51:59.151016: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-17 17:51:59.154685: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-17 17:51:59.157040: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-17 17:51:59.160825: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-17 17:51:59.164169: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-17 17:51:59.170303: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-17 17:51:59.173960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-17 17:51:59.175239: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-17 17:51:59.177853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:09:00.0 name: GeForce GTX TITAN X computeCapability: 5.2
+coreClock: 1.076GHz coreCount: 24 deviceMemorySize: 11.93GiB deviceMemoryBandwidth: 313.37GiB/s
+2021-06-17 17:51:59.179060: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-17 17:51:59.180093: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-17 17:51:59.181077: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-17 17:51:59.181924: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-17 17:51:59.183492: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-17 17:51:59.185187: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-17 17:51:59.186070: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-17 17:51:59.187933: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-17 17:51:59.191608: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-17 17:51:59.192500: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-17 17:51:59.938626: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-17 17:51:59.939784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-17 17:51:59.940710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-17 17:51:59.946023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11269 MB memory) -> physical GPU (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:09:00.0, compute capability: 5.2)
+2021-06-17 17:51:59.947147: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Initializing variables...
+2021-06-17 17:54:17.257247: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-17 17:54:17.341926: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3499910000 Hz
+Loading validation data...
+Data_set: ../raw_images_night/crops_night/ 
+
+DSLR: fujifilm/ 
+
+phone_dir: mediatek_raw 
+
+Validation data was loaded. (1915)
+
+Loading training data...
+Training data was loaded
+
+Training network...
+0
+100000
+2021-06-17 18:17:13.397968: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-17 18:17:15.349499: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+step 0 | training: 0.02413, validation: 24.79 | content: 11.5, mse: 0.09775, psnr: 10.17, ms-ssim: 0.3935
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_0.ckpt
+step 1000 | training: 19.09, validation: 17.24 | content: 11.23, mse: 0.0118, psnr: 19.54, ms-ssim: 0.8419
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_1000.ckpt
+step 2000 | training: 17.09, validation: 16.28 | content: 10.79, mse: 0.01059, psnr: 20.03, ms-ssim: 0.8646
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_2000.ckpt
+step 3000 | training: 16.24, validation: 15.55 | content: 10.49, mse: 0.01014, psnr: 20.25, ms-ssim: 0.872
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_3000.ckpt
+step 4000 | training: 15.82, validation: 15.08 | content: 10.19, mse: 0.009729, psnr: 20.45, ms-ssim: 0.8767
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_4000.ckpt
+step 5000 | training: 15.29, validation: 14.72 | content: 9.935, mse: 0.009657, psnr: 20.5, ms-ssim: 0.8777
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_5000.ckpt
+step 6000 | training: 14.92, validation: 14.53 | content: 9.762, mse: 0.00994, psnr: 20.42, ms-ssim: 0.8773
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_6000.ckpt
+step 7000 | training: 14.72, validation: 14.38 | content: 9.459, mse: 0.009465, psnr: 20.57, ms-ssim: 0.8779
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_7000.ckpt
+step 8000 | training: 14.22, validation: 13.89 | content: 9.152, mse: 0.009436, psnr: 20.63, ms-ssim: 0.8796
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_8000.ckpt
+step 9000 | training: 14.32, validation: 13.72 | content: 9.06, mse: 0.00906, psnr: 20.79, ms-ssim: 0.8818
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_9000.ckpt
+step 10000 | training: 14.02, validation: 13.55 | content: 9.009, mse: 0.009078, psnr: 20.83, ms-ssim: 0.8836
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_10000.ckpt
+step 11000 | training: 13.63, validation: 13.44 | content: 8.907, mse: 0.008841, psnr: 20.91, ms-ssim: 0.8841
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_11000.ckpt
+step 12000 | training: 13.63, validation: 13.27 | content: 8.823, mse: 0.008783, psnr: 20.97, ms-ssim: 0.8856
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_12000.ckpt
+step 13000 | training: 13.61, validation: 13.2 | content: 8.765, mse: 0.008649, psnr: 21.02, ms-ssim: 0.8883
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_13000.ckpt
+step 14000 | training: 13.32, validation: 13.08 | content: 8.71, mse: 0.008958, psnr: 20.95, ms-ssim: 0.8872
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_14000.ckpt
+step 15000 | training: 13.38, validation: 13.04 | content: 8.668, mse: 0.008587, psnr: 21.07, ms-ssim: 0.889
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_15000.ckpt
+step 16000 | training: 13.47, validation: 13.02 | content: 8.601, mse: 0.008388, psnr: 21.15, ms-ssim: 0.8899
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_16000.ckpt
+step 17000 | training: 13.11, validation: 12.96 | content: 8.558, mse: 0.008372, psnr: 21.17, ms-ssim: 0.8904
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_17000.ckpt
+step 18000 | training: 13.13, validation: 12.95 | content: 8.573, mse: 0.008976, psnr: 20.96, ms-ssim: 0.8882
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_18000.ckpt
+step 19000 | training: 13.06, validation: 12.96 | content: 8.509, mse: 0.008712, psnr: 20.98, ms-ssim: 0.8911
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_19000.ckpt
+step 20000 | training: 13.04, validation: 12.93 | content: 8.423, mse: 0.008514, psnr: 21.07, ms-ssim: 0.8903
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_20000.ckpt
+step 21000 | training: 12.91, validation: 12.73 | content: 8.437, mse: 0.0084, psnr: 21.17, ms-ssim: 0.8932
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_21000.ckpt
+step 22000 | training: 12.79, validation: 12.69 | content: 8.401, mse: 0.008285, psnr: 21.23, ms-ssim: 0.8928
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_22000.ckpt
+step 23000 | training: 12.89, validation: 12.63 | content: 8.403, mse: 0.008417, psnr: 21.2, ms-ssim: 0.8933
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_23000.ckpt
+step 24000 | training: 12.94, validation: 12.6 | content: 8.399, mse: 0.008608, psnr: 21.1, ms-ssim: 0.8919
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_24000.ckpt
+step 25000 | training: 12.89, validation: 12.61 | content: 8.386, mse: 0.008468, psnr: 21.17, ms-ssim: 0.8939
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_25000.ckpt
+step 26000 | training: 12.72, validation: 12.58 | content: 8.367, mse: 0.008911, psnr: 21.02, ms-ssim: 0.8925
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_26000.ckpt
+step 27000 | training: 12.72, validation: 12.5 | content: 8.363, mse: 0.008198, psnr: 21.31, ms-ssim: 0.8953
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_27000.ckpt
+step 28000 | training: 12.85, validation: 12.54 | content: 8.373, mse: 0.008358, psnr: 21.22, ms-ssim: 0.895
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_28000.ckpt
+step 29000 | training: 12.63, validation: 12.85 | content: 8.289, mse: 0.008999, psnr: 20.88, ms-ssim: 0.8922
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_29000.ckpt
+step 30000 | training: 12.65, validation: 12.57 | content: 8.304, mse: 0.008387, psnr: 21.2, ms-ssim: 0.8945
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_30000.ckpt
+step 31000 | training: 12.7, validation: 12.45 | content: 8.314, mse: 0.008106, psnr: 21.33, ms-ssim: 0.8955
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_31000.ckpt
+step 32000 | training: 12.69, validation: 12.5 | content: 8.32, mse: 0.008159, psnr: 21.32, ms-ssim: 0.8959
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_32000.ckpt
+step 33000 | training: 12.72, validation: 12.45 | content: 8.299, mse: 0.008291, psnr: 21.27, ms-ssim: 0.8951
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_33000.ckpt
+step 34000 | training: 12.67, validation: 12.43 | content: 8.252, mse: 0.008214, psnr: 21.26, ms-ssim: 0.895
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_34000.ckpt
+step 35000 | training: 12.75, validation: 12.45 | content: 8.246, mse: 0.008155, psnr: 21.32, ms-ssim: 0.8958
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_35000.ckpt
+step 36000 | training: 12.57, validation: 12.46 | content: 8.261, mse: 0.008471, psnr: 21.17, ms-ssim: 0.8945
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_36000.ckpt
+step 37000 | training: 12.57, validation: 12.37 | content: 8.266, mse: 0.008409, psnr: 21.23, ms-ssim: 0.8964
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_37000.ckpt
+step 38000 | training: 12.46, validation: 12.38 | content: 8.253, mse: 0.008684, psnr: 21.09, ms-ssim: 0.8944
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_38000.ckpt
+step 39000 | training: 12.66, validation: 12.65 | content: 8.201, mse: 0.008565, psnr: 21.08, ms-ssim: 0.8932
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_39000.ckpt
+step 40000 | training: 12.69, validation: 12.47 | content: 8.221, mse: 0.0085, psnr: 21.19, ms-ssim: 0.896
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_40000.ckpt
+step 41000 | training: 12.53, validation: 12.52 | content: 8.197, mse: 0.008736, psnr: 20.99, ms-ssim: 0.8942
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_41000.ckpt
+step 42000 | training: 12.56, validation: 12.31 | content: 8.23, mse: 0.008098, psnr: 21.35, ms-ssim: 0.8971
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_42000.ckpt
+step 43000 | training: 12.46, validation: 12.32 | content: 8.201, mse: 0.008491, psnr: 21.18, ms-ssim: 0.8955
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_43000.ckpt
+step 44000 | training: 12.39, validation: 12.31 | content: 8.211, mse: 0.00822, psnr: 21.25, ms-ssim: 0.8966
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_44000.ckpt
+step 45000 | training: 12.39, validation: 12.27 | content: 8.212, mse: 0.008441, psnr: 21.22, ms-ssim: 0.8973
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_45000.ckpt
+step 46000 | training: 12.46, validation: 12.3 | content: 8.199, mse: 0.008697, psnr: 21.15, ms-ssim: 0.8963
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_46000.ckpt
+step 47000 | training: 12.4, validation: 12.24 | content: 8.175, mse: 0.008469, psnr: 21.23, ms-ssim: 0.897
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_47000.ckpt
+step 48000 | training: 12.38, validation: 12.38 | content: 8.17, mse: 0.008581, psnr: 21.12, ms-ssim: 0.8965
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_48000.ckpt
+step 49000 | training: 12.41, validation: 12.26 | content: 8.21, mse: 0.008469, psnr: 21.25, ms-ssim: 0.8974
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_49000.ckpt
+step 50000 | training: 12.35, validation: 12.19 | content: 8.142, mse: 0.008095, psnr: 21.37, ms-ssim: 0.8975
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_50000.ckpt
+step 51000 | training: 12.27, validation: 12.13 | content: 8.089, mse: 0.00828, psnr: 21.34, ms-ssim: 0.8983
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_51000.ckpt
+step 52000 | training: 12.29, validation: 12.22 | content: 8.011, mse: 0.00803, psnr: 21.43, ms-ssim: 0.8993
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_52000.ckpt
+step 53000 | training: 12.1, validation: 12.01 | content: 7.916, mse: 0.007744, psnr: 21.55, ms-ssim: 0.9003
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_53000.ckpt
+step 54000 | training: 12.04, validation: 12.04 | content: 7.929, mse: 0.007978, psnr: 21.45, ms-ssim: 0.9006
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_54000.ckpt
+step 55000 | training: 12.08, validation: 11.88 | content: 7.916, mse: 0.007454, psnr: 21.7, ms-ssim: 0.9014
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_55000.ckpt
+step 56000 | training: 12.01, validation: 11.92 | content: 7.85, mse: 0.007905, psnr: 21.48, ms-ssim: 0.9002
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_56000.ckpt
+step 57000 | training: 11.94, validation: 11.85 | content: 7.867, mse: 0.007761, psnr: 21.52, ms-ssim: 0.9016
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_57000.ckpt
+step 58000 | training: 12.05, validation: 11.83 | content: 7.842, mse: 0.007922, psnr: 21.53, ms-ssim: 0.9011
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_58000.ckpt
+step 59000 | training: 11.88, validation: 11.83 | content: 7.819, mse: 0.007657, psnr: 21.61, ms-ssim: 0.9023
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_59000.ckpt
+step 60000 | training: 11.94, validation: 11.84 | content: 7.818, mse: 0.007474, psnr: 21.69, ms-ssim: 0.9028
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_60000.ckpt
+step 61000 | training: 11.76, validation: 11.81 | content: 7.755, mse: 0.00754, psnr: 21.63, ms-ssim: 0.902
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_61000.ckpt
+step 62000 | training: 11.82, validation: 11.73 | content: 7.714, mse: 0.007291, psnr: 21.8, ms-ssim: 0.9025
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_62000.ckpt
+step 63000 | training: 11.74, validation: 11.73 | content: 7.771, mse: 0.007634, psnr: 21.6, ms-ssim: 0.9022
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_63000.ckpt
+step 64000 | training: 11.68, validation: 11.75 | content: 7.741, mse: 0.007378, psnr: 21.73, ms-ssim: 0.9025
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_64000.ckpt
+step 65000 | training: 11.86, validation: 11.72 | content: 7.724, mse: 0.007637, psnr: 21.69, ms-ssim: 0.9028
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_65000.ckpt
+step 66000 | training: 11.7, validation: 11.65 | content: 7.709, mse: 0.007358, psnr: 21.76, ms-ssim: 0.903
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_66000.ckpt
+step 67000 | training: 11.73, validation: 11.66 | content: 7.711, mse: 0.007453, psnr: 21.75, ms-ssim: 0.9028
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_67000.ckpt
+step 68000 | training: 11.68, validation: 11.86 | content: 7.698, mse: 0.007808, psnr: 21.5, ms-ssim: 0.9013
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_68000.ckpt
+step 69000 | training: 11.56, validation: 11.64 | content: 7.656, mse: 0.007423, psnr: 21.73, ms-ssim: 0.9017
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_69000.ckpt
+step 70000 | training: 11.57, validation: 11.75 | content: 7.707, mse: 0.007854, psnr: 21.54, ms-ssim: 0.9016
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_70000.ckpt
+step 71000 | training: 11.75, validation: 11.7 | content: 7.739, mse: 0.007656, psnr: 21.59, ms-ssim: 0.9032
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_71000.ckpt
+step 72000 | training: 11.65, validation: 11.62 | content: 7.694, mse: 0.007271, psnr: 21.86, ms-ssim: 0.904
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_72000.ckpt
+step 73000 | training: 11.67, validation: 11.94 | content: 7.666, mse: 0.008211, psnr: 21.32, ms-ssim: 0.901
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_73000.ckpt
+step 74000 | training: 11.64, validation: 11.65 | content: 7.714, mse: 0.007537, psnr: 21.73, ms-ssim: 0.9031
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_74000.ckpt
+step 75000 | training: 11.53, validation: 11.75 | content: 7.635, mse: 0.007379, psnr: 21.71, ms-ssim: 0.9027
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_75000.ckpt
+step 76000 | training: 11.67, validation: 11.72 | content: 7.671, mse: 0.007749, psnr: 21.54, ms-ssim: 0.902
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_76000.ckpt
+step 77000 | training: 11.51, validation: 11.59 | content: 7.637, mse: 0.007234, psnr: 21.88, ms-ssim: 0.9041
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_77000.ckpt
+step 78000 | training: 11.48, validation: 11.62 | content: 7.638, mse: 0.007887, psnr: 21.47, ms-ssim: 0.9021
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_78000.ckpt
+step 79000 | training: 11.48, validation: 11.57 | content: 7.616, mse: 0.007544, psnr: 21.7, ms-ssim: 0.9034
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_79000.ckpt
+step 80000 | training: 11.57, validation: 11.56 | content: 7.607, mse: 0.007396, psnr: 21.75, ms-ssim: 0.9032
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_80000.ckpt
+step 81000 | training: 11.63, validation: 11.53 | content: 7.612, mse: 0.007263, psnr: 21.81, ms-ssim: 0.9041
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_81000.ckpt
+step 82000 | training: 11.37, validation: 11.69 | content: 7.629, mse: 0.007677, psnr: 21.61, ms-ssim: 0.9028
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_82000.ckpt
+step 83000 | training: 11.45, validation: 11.52 | content: 7.591, mse: 0.007363, psnr: 21.75, ms-ssim: 0.9039
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_83000.ckpt
+step 84000 | training: 11.48, validation: 11.54 | content: 7.571, mse: 0.007542, psnr: 21.68, ms-ssim: 0.9037
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_84000.ckpt
+step 85000 | training: 11.48, validation: 11.54 | content: 7.579, mse: 0.007459, psnr: 21.72, ms-ssim: 0.9038
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_85000.ckpt
+step 86000 | training: 11.48, validation: 11.61 | content: 7.583, mse: 0.007621, psnr: 21.64, ms-ssim: 0.903
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_86000.ckpt
+step 87000 | training: 11.27, validation: 11.56 | content: 7.559, mse: 0.007686, psnr: 21.61, ms-ssim: 0.9032
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_87000.ckpt
+step 88000 | training: 11.47, validation: 11.51 | content: 7.552, mse: 0.007307, psnr: 21.81, ms-ssim: 0.9043
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_88000.ckpt
+step 89000 | training: 11.43, validation: 11.55 | content: 7.557, mse: 0.007453, psnr: 21.77, ms-ssim: 0.9041
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_89000.ckpt
+step 90000 | training: 11.23, validation: 11.52 | content: 7.56, mse: 0.007414, psnr: 21.76, ms-ssim: 0.9045
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_90000.ckpt
+step 91000 | training: 11.35, validation: 11.51 | content: 7.536, mse: 0.007478, psnr: 21.66, ms-ssim: 0.9038
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_91000.ckpt
+step 92000 | training: 11.21, validation: 11.56 | content: 7.554, mse: 0.007544, psnr: 21.63, ms-ssim: 0.9038
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_92000.ckpt
+step 93000 | training: 11.2, validation: 11.46 | content: 7.512, mse: 0.007176, psnr: 21.85, ms-ssim: 0.9054
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_93000.ckpt
+step 94000 | training: 11.39, validation: 11.48 | content: 7.53, mse: 0.007278, psnr: 21.79, ms-ssim: 0.9053
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_94000.ckpt
+step 95000 | training: 11.26, validation: 11.53 | content: 7.53, mse: 0.007442, psnr: 21.72, ms-ssim: 0.9051
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_95000.ckpt
+step 96000 | training: 11.04, validation: 11.46 | content: 7.485, mse: 0.007396, psnr: 21.76, ms-ssim: 0.9053
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_96000.ckpt
+step 97000 | training: 11.2, validation: 11.45 | content: 7.529, mse: 0.007114, psnr: 21.89, ms-ssim: 0.9065
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_97000.ckpt
+step 98000 | training: 11.03, validation: 11.42 | content: 7.467, mse: 0.007269, psnr: 21.77, ms-ssim: 0.9056
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_98000.ckpt
+step 99000 | training: 11.11, validation: 11.42 | content: 7.468, mse: 0.007233, psnr: 21.84, ms-ssim: 0.9063
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_99000.ckpt
+step 100000 | training: 10.99, validation: 11.34 | content: 7.428, mse: 0.007205, psnr: 21.8, ms-ssim: 0.9067
+
+saving model: models/punet/learning_R_0.0001_RI_0_NI_3/punet_iteration_100000.ckpt
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/training/saver.py:968: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+total train/eval time: 1 day, 23:03:30.267848

@@ -1,0 +1,687 @@
+2021-06-21 10:51:47.334586: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 100000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_0.0001_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 3
+2021-06-21 10:51:54.481014: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-21 10:51:54.483973: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-21 10:51:54.562093: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 10:51:54.563466: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:51:54.568185: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 10:51:54.569350: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 10:51:54.573050: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 10:51:54.575433: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 10:51:54.579452: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 10:51:54.584951: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 10:51:54.592099: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:51:54.599267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 10:51:54.600814: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-21 10:51:54.606962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 10:51:54.609213: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:51:54.610824: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 10:51:54.612015: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 10:51:54.613148: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 10:51:54.614164: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 10:51:54.615233: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 10:51:54.616329: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 10:51:54.617363: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:51:54.639117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 10:51:54.640304: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:51:55.725270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-21 10:51:55.727788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-21 10:51:55.729753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-21 10:51:55.741404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11209 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2021-06-21 10:51:55.743444: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_0.0001_RI_100000_NI_3/punet_iteration_100000.ckpt
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 55, in <module>
+    saver.restore(sess, model_dir + name_model_full + ".ckpt")
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/training/saver.py", line 1289, in restore
+    raise ValueError("The passed save_path is not a valid checkpoint: " +
+ValueError: The passed save_path is not a valid checkpoint: models/punet/learning_R_0.0001_RI_100000_NI_3/punet_iteration_100000.ckpt
+2021-06-21 10:51:56.843904: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 105000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_0.0001_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 3
+2021-06-21 10:51:58.915787: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-21 10:51:58.918494: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-21 10:51:58.964386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 10:51:58.965491: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:51:58.968933: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 10:51:58.970207: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 10:51:58.973358: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 10:51:58.974920: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 10:51:58.978364: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 10:51:58.980850: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 10:51:58.986910: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:51:58.992649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 10:51:58.994137: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-21 10:51:58.997906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 10:51:58.999045: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:51:59.000168: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 10:51:59.001346: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 10:51:59.002385: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 10:51:59.003361: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 10:51:59.004393: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 10:51:59.005458: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 10:51:59.006485: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:51:59.013011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 10:51:59.014412: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:52:00.049125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-21 10:52:00.050505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-21 10:52:00.051725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-21 10:52:00.061874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11209 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2021-06-21 10:52:00.064634: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_0.0001_RI_100000_NI_3/punet_iteration_105000.ckpt
+2021-06-21 10:52:00.463899: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-21 10:52:00.491894: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2199990000 Hz
+['../raw_images_night/test_images//MTK_RAW/', '../raw_images_night/test_images/MTK_RAW_over/', '../raw_images_night/test_images/MTK_RAW_under/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-21 10:52:06.458807: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:52:07.766390: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2036/ 
+Lossy conversion from float32 to uint8. Range [-0.03253108263015747, 0.999198317527771]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 36.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/36/ 
+Lossy conversion from float32 to uint8. Range [-0.04178541898727417, 1.026106595993042]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2013.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2013/ 
+Lossy conversion from float32 to uint8. Range [-0.03354024887084961, 1.0149911642074585]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2051.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2051/ 
+Lossy conversion from float32 to uint8. Range [-0.03201550245285034, 1.0179004669189453]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 57.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/57/ 
+Lossy conversion from float32 to uint8. Range [-0.03073042631149292, 1.023727536201477]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2155.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2155/ 
+Lossy conversion from float32 to uint8. Range [-0.021442294120788574, 0.9722435474395752]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1080.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1080/ 
+Lossy conversion from float32 to uint8. Range [-0.02815425395965576, 0.9895857572555542]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 14.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/14/ 
+Lossy conversion from float32 to uint8. Range [-0.033994197845458984, 1.0182996988296509]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1048.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1048/ 
+Lossy conversion from float32 to uint8. Range [-0.019875824451446533, 0.9596412181854248]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 105.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Successfully created the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/105/ 
+Lossy conversion from float32 to uint8. Range [-0.030243277549743652, 0.9834012389183044]. Convert image to uint8 prior to saving to suppress this warning.
+total test time: 0:07:34.133867
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py:291: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/convert_to_constants.py:856: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+Save punet_iteration_105000.pb in models/punet/learning_R_0.0001_RI_100000_NI_3/ Done
+model saved!
+2021-06-21 10:59:36.840326: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 110000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_0.0001_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 3
+2021-06-21 10:59:44.519357: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-21 10:59:44.522174: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-21 10:59:44.577580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 10:59:44.578530: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:59:44.583636: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 10:59:44.584661: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 10:59:44.588359: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 10:59:44.591142: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 10:59:44.595065: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 10:59:44.598163: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 10:59:44.605289: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:59:44.612220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 10:59:44.613520: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-21 10:59:44.616769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 10:59:44.617737: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:59:44.618689: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 10:59:44.619614: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 10:59:44.620861: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 10:59:44.621815: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 10:59:44.622785: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 10:59:44.623759: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 10:59:44.624699: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:59:44.635690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 10:59:44.636818: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 10:59:45.728486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-21 10:59:45.729629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-21 10:59:45.730761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-21 10:59:45.739648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11209 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2021-06-21 10:59:45.741661: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_0.0001_RI_100000_NI_3/punet_iteration_110000.ckpt
+2021-06-21 10:59:46.155722: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-21 10:59:46.183852: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2199990000 Hz
+['../raw_images_night/test_images//MTK_RAW/', '../raw_images_night/test_images/MTK_RAW_over/', '../raw_images_night/test_images/MTK_RAW_under/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-21 10:59:52.968430: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 10:59:54.369915: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2036/ failed
+Lossy conversion from float32 to uint8. Range [-0.03235739469528198, 0.9942614436149597]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 36.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/36/ failed
+Lossy conversion from float32 to uint8. Range [-0.04002106189727783, 1.0267623662948608]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2013.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2013/ failed
+Lossy conversion from float32 to uint8. Range [-0.029275357723236084, 0.9956498742103577]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2051.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2051/ failed
+Lossy conversion from float32 to uint8. Range [-0.03172808885574341, 1.0528061389923096]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 57.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/57/ failed
+Lossy conversion from float32 to uint8. Range [-0.021520912647247314, 1.0299410820007324]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2155.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2155/ failed
+Lossy conversion from float32 to uint8. Range [-0.022559285163879395, 0.9898583292961121]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1080.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1080/ failed
+Lossy conversion from float32 to uint8. Range [-0.025501787662506104, 0.9933640956878662]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 14.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/14/ failed
+Lossy conversion from float32 to uint8. Range [-0.03169602155685425, 1.026111125946045]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1048.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1048/ failed
+Lossy conversion from float32 to uint8. Range [-0.024593710899353027, 0.9826377630233765]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 105.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/105/ failed
+Lossy conversion from float32 to uint8. Range [-0.026547133922576904, 0.9888401031494141]. Convert image to uint8 prior to saving to suppress this warning.
+total test time: 0:08:01.652089
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py:291: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/convert_to_constants.py:856: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+Save punet_iteration_110000.pb in models/punet/learning_R_0.0001_RI_100000_NI_3/ Done
+model saved!
+2021-06-21 11:07:50.470648: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 115000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_0.0001_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 3
+2021-06-21 11:07:57.945797: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-21 11:07:57.948567: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-21 11:07:58.025639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 11:07:58.026735: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 11:07:58.032290: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 11:07:58.033304: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 11:07:58.036782: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 11:07:58.038831: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 11:07:58.042853: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 11:07:58.045910: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 11:07:58.052645: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 11:07:58.065487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 11:07:58.066963: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-21 11:07:58.070311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 11:07:58.071310: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 11:07:58.072198: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 11:07:58.073141: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 11:07:58.074039: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 11:07:58.075147: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 11:07:58.076087: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 11:07:58.077148: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 11:07:58.078137: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 11:07:58.083208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 11:07:58.084332: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 11:07:59.248171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-21 11:07:59.249434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-21 11:07:59.250452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-21 11:07:59.259835: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11209 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2021-06-21 11:07:59.261400: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_0.0001_RI_100000_NI_3/punet_iteration_115000.ckpt
+2021-06-21 11:07:59.662279: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-21 11:07:59.691906: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2199990000 Hz
+['../raw_images_night/test_images//MTK_RAW/', '../raw_images_night/test_images/MTK_RAW_over/', '../raw_images_night/test_images/MTK_RAW_under/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-21 11:08:07.477723: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 11:08:08.818392: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2036/ failed
+Lossy conversion from float32 to uint8. Range [-0.03139996528625488, 0.9884228706359863]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 36.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/36/ failed
+Lossy conversion from float32 to uint8. Range [-0.04168868064880371, 1.026228666305542]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2013.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2013/ failed
+Lossy conversion from float32 to uint8. Range [-0.01865088939666748, 1.0145115852355957]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2051.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2051/ failed
+Lossy conversion from float32 to uint8. Range [-0.03209328651428223, 1.0434718132019043]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 57.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/57/ failed
+Lossy conversion from float32 to uint8. Range [-0.04867351055145264, 1.0638399124145508]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2155.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2155/ failed
+Lossy conversion from float32 to uint8. Range [-0.021445095539093018, 0.9734670519828796]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1080.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1080/ failed
+Lossy conversion from float32 to uint8. Range [-0.03090578317642212, 0.9809823632240295]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 14.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/14/ failed
+Lossy conversion from float32 to uint8. Range [-0.02996218204498291, 1.0440657138824463]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1048.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1048/ failed
+Lossy conversion from float32 to uint8. Range [-0.024825215339660645, 0.9785603880882263]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 105.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/105/ failed
+Lossy conversion from float32 to uint8. Range [-0.03230714797973633, 1.0012608766555786]. Convert image to uint8 prior to saving to suppress this warning.
+total test time: 0:07:42.842778
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py:291: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/convert_to_constants.py:856: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+Save punet_iteration_115000.pb in models/punet/learning_R_0.0001_RI_100000_NI_3/ Done
+model saved!
+2021-06-21 11:15:45.504646: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 120000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_0.0001_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 3
+2021-06-21 11:15:53.266950: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-21 11:15:53.269885: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-21 11:15:53.354611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 11:15:53.355680: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 11:15:53.361243: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 11:15:53.362232: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 11:15:53.365721: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 11:15:53.367573: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 11:15:53.371943: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 11:15:53.374830: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 11:15:53.382236: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 11:15:53.392739: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 11:15:53.394073: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-21 11:15:53.397531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:05:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 11:15:53.398521: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 11:15:53.399459: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 11:15:53.400636: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 11:15:53.401704: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 11:15:53.402665: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 11:15:53.403585: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 11:15:53.404569: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 11:15:53.405547: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 11:15:53.419367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 11:15:53.420521: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 11:15:54.606516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-21 11:15:54.607579: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-21 11:15:54.608567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-21 11:15:54.618141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11209 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2021-06-21 11:15:54.620970: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_0.0001_RI_100000_NI_3/punet_iteration_120000.ckpt
+2021-06-21 11:15:55.067831: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-21 11:15:55.095852: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2199990000 Hz
+['../raw_images_night/test_images//MTK_RAW/', '../raw_images_night/test_images/MTK_RAW_over/', '../raw_images_night/test_images/MTK_RAW_under/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-21 11:16:02.516950: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 11:16:03.997256: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2036/ failed
+Lossy conversion from float32 to uint8. Range [-0.030223608016967773, 0.9885862469673157]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 36.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/36/ failed
+Lossy conversion from float32 to uint8. Range [-0.04243654012680054, 1.0371873378753662]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2013.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2013/ failed
+Lossy conversion from float32 to uint8. Range [-0.033514559268951416, 1.007223129272461]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2051.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2051/ failed
+Lossy conversion from float32 to uint8. Range [-0.029875338077545166, 1.0500569343566895]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 57.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/57/ failed
+Lossy conversion from float32 to uint8. Range [-0.02190500497817993, 1.0284554958343506]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 2155.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/2155/ failed
+Lossy conversion from float32 to uint8. Range [-0.024611234664916992, 0.9773221015930176]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1080.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1080/ failed
+Lossy conversion from float32 to uint8. Range [-0.029926776885986328, 0.9859678149223328]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 14.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/14/ failed
+Lossy conversion from float32 to uint8. Range [-0.02683413028717041, 1.0214779376983643]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1048.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/1048/ failed
+Lossy conversion from float32 to uint8. Range [-0.027704298496246338, 0.9865561723709106]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 105.png
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+(3000, 4000)
+(1488, 1984, 4)
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3 failed
+Creation of the directory results/full_res_test_results/learning_R_0.0001_RI_100000_NI_3/105/ failed
+Lossy conversion from float32 to uint8. Range [-0.03664350509643555, 0.9947081804275513]. Convert image to uint8 prior to saving to suppress this warning.
+total test time: 0:07:42.727211
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py:291: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/convert_to_constants.py:856: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+Save punet_iteration_120000.pb in models/punet/learning_R_0.0001_RI_100000_NI_3/ Done
+model saved!
+All done

@@ -1,0 +1,63 @@
+2021-06-21 15:24:57.977767: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+The following parameters will be applied for training:
+Model architecture: punet
+Restore Iteration: 100000
+Batch size: 32
+Training size: 5000
+Learning rate: 5e-05
+Training iterations: 50000
+Evaluation step: 1000
+Path to the dataset: ../raw_images_night/crops_night/
+Path to Raw-to-RGB model network: learning_R_5e-5_RI_0_NI_3/
+Path to result images: results/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Path to RGB data from DSLR: fujifilm/
+Path to Raw data from phone: mediatek_raw
+num_input_images: 3
+2021-06-21 15:25:07.951069: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-21 15:25:07.954669: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-21 15:25:07.987205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:88:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 15:25:07.988095: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 15:25:07.997449: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 15:25:08.002597: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 15:25:08.012727: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 15:25:08.015824: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 15:25:08.021745: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 15:25:08.027147: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 15:25:08.035717: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 15:25:08.040968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 15:25:08.042849: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-21 15:25:08.045827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:88:00.0 name: TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2021-06-21 15:25:08.048236: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 15:25:08.050991: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-21 15:25:08.052799: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-21 15:25:08.054203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-21 15:25:08.056981: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-21 15:25:08.058769: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-21 15:25:08.060877: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-21 15:25:08.061842: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-21 15:25:08.068062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-21 15:25:08.069203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-21 15:25:09.008796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-21 15:25:09.009793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-21 15:25:09.010621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-21 15:25:09.023024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11209 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:88:00.0, compute capability: 6.1)
+2021-06-21 15:25:09.024399: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Initializing variables...
+2021-06-21 15:26:36.128413: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-21 15:26:36.224356: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2199840000 Hz
+Restoring Variables from: learning_R_5e-5_RI_0_NI_3/punet_iteration_100000
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/train_model.py", line 112, in <module>
+    saver.restore(sess, "models/punet/" + name_model_restore_full + ".ckpt")
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/training/saver.py", line 1289, in restore
+    raise ValueError("The passed save_path is not a valid checkpoint: " +
+ValueError: The passed save_path is not a valid checkpoint: models/punet/learning_R_5e-5_RI_0_NI_3/punet_iteration_100000.ckpt

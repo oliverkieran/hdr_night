@@ -1,0 +1,100 @@
+2021-06-23 09:59:35.497798: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:04.937489: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:09.819845: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:12.644344: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:16.506156: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:19.209363: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:22.090664: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:24.932993: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:28.253681: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:31.368483: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+2021-06-23 10:00:34.423991: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 19, in <module>
+    utils.process_test_model_args(sys.argv)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 242, in process_test_model_args
+    restore_iter = get_last_iter(model_dir, name_model)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/utils.py", line 266, in get_last_iter
+    for model_file in os.listdir(model_dir)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/punet/learning_R_5e-05_RI_100000_NI_3$'
+All done

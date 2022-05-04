@@ -1,0 +1,1365 @@
+2021-06-23 10:03:36.631913: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:03:43.323523: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:03:43.326484: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:03:43.447442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:03:43.448451: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:03:43.458592: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:03:43.459449: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:03:43.463920: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:03:43.465909: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:03:43.470621: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:03:43.474085: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:03:43.482203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:03:43.492813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:03:43.494049: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:03:43.499549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:03:43.500349: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:03:43.501122: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:03:43.501864: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:03:43.502556: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:03:43.503349: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:03:43.504116: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:03:43.504830: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:03:43.505591: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:03:43.513916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:03:43.514911: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:03:44.665109: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:03:44.666037: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:03:44.666898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:03:44.682003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:03:44.683772: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:03:45.050690: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:03:45.078615: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:03:52.472682: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:03:53.913012: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:03:55.870202: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:03:55.872817: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:03:55.981968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:03:55.982897: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:03:55.986663: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:03:55.987457: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:03:55.990215: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:03:55.991248: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:03:55.994207: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:03:55.996312: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:03:56.001598: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:03:56.009855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:03:56.011077: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:03:56.019354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:03:56.020220: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:03:56.021394: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:03:56.022209: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:03:56.023021: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:03:56.023795: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:03:56.024575: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:03:56.025310: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:03:56.026135: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:03:56.039095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:03:56.039941: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:03:57.258350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:03:57.259165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:03:57.259885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:03:57.270382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:03:57.271568: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:03:57.640276: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:03:57.670653: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:03:58.765578: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:03:59.709615: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:01.654641: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:01.657314: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:01.757194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:01.758025: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:01.762096: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:01.762910: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:01.765947: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:01.767140: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:01.770448: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:01.772730: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:01.778070: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:01.786605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:01.788560: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:01.796879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:01.803685: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:01.804556: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:01.805382: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:01.810584: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:01.814652: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:01.815491: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:01.816341: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:01.817183: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:01.843234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:01.850409: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:02.932604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:02.933489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:02.934261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:02.951400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:02.952662: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:03.333271: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:03.362603: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:04.527846: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:05.423561: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:07.371333: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:07.373991: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:07.468266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:07.469125: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:07.472714: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:07.473423: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:07.476135: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:07.477329: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:07.479999: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:07.481966: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:07.487007: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:07.494449: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:07.496606: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:07.500598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:07.501376: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:07.502101: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:07.502798: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:07.503916: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:07.504770: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:07.509560: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:07.510313: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:07.511027: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:07.526319: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:07.527140: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:08.633183: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:08.638920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:08.639765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:08.666720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:08.667998: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:09.078524: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:09.106637: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:10.152581: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:11.132294: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:13.089178: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:13.092341: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:13.183851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:13.184837: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:13.188943: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:13.189805: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:13.193131: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:13.194534: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:13.197853: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:13.199805: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:13.205416: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:13.211144: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:13.212276: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:13.220667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:13.221592: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:13.222387: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:13.223214: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:13.224004: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:13.224786: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:13.225575: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:13.226286: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:13.227053: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:13.238905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:13.239675: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:14.335111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:14.341616: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:14.362393: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:14.393443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:14.400916: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:14.810998: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:14.838629: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:15.892455: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:16.855972: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:18.784746: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:18.787365: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:18.907199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:18.908227: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:18.911567: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:18.912438: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:18.915426: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:18.916527: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:18.919614: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:18.921665: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:18.927203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:18.938956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:18.940157: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:18.947295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:18.948059: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:18.948863: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:18.949614: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:18.950488: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:18.951280: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:18.952126: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:18.952900: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:18.953651: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:18.962368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:18.963163: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:20.089276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:20.090151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:20.090934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:20.106171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:20.107785: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:20.503826: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:20.534637: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:21.564456: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:22.559481: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:24.583008: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:24.586039: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:24.677098: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:24.677945: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:24.681000: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:24.681768: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:24.684383: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:24.685430: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:24.688260: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:24.690306: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:24.695776: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:24.703742: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:24.704992: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:24.708685: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:24.709513: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:24.710477: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:24.711382: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:24.712218: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:24.713052: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:24.713773: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:24.714506: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:24.715354: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:24.723983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:24.724775: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:25.785896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:25.803935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:25.815807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:25.828935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:25.830048: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:26.227318: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:26.254596: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:27.304213: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:28.234590: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:30.174387: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:30.177076: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:30.270904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:30.271864: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:30.276143: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:30.277064: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:30.280510: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:30.282201: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:30.285273: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:30.287277: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:30.292910: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:30.298598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:30.299656: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:30.308912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:30.309801: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:30.310580: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:30.311532: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:30.312289: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:30.313071: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:30.313734: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:30.314540: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:30.315342: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:30.332960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:30.334019: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:31.422885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:31.423802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:31.424640: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:31.469440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:31.470849: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:31.850067: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:31.878721: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:32.934719: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:33.867600: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:35.776302: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:35.778898: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:35.917416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:35.918369: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:35.923805: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:35.924654: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:35.927913: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:35.929181: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:35.932137: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:35.934277: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:35.939730: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:35.947469: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:35.948683: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:35.966653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:35.967550: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:35.968436: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:35.969281: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:35.970083: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:35.970807: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:35.971595: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:35.972684: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:35.973511: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:36.001544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:36.002486: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:37.204901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:37.205747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:37.206531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:37.214793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:37.216219: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:37.601146: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:37.630701: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:38.699330: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:39.758980: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:43.458197: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:43.460739: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:43.565620: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:43.566492: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:43.571093: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:43.571968: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:43.575538: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:43.577203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:43.580950: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:43.583787: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:43.590500: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:43.603300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:43.605809: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:43.610299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:43.611088: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:43.611879: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:43.612694: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:43.613410: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:43.614140: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:43.614854: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:43.615570: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:43.616282: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:43.625488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:43.626304: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:44.832645: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:44.833453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:44.834199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:44.849959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:44.851123: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:45.248599: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:45.278634: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:46.368775: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+2021-06-23 10:04:47.280574: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+150000
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 150000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_100000_NI_3/
+Path to result images: results/full_res_test_results/
+Path to testing data: test_images/
+num_input_images: 1
+2021-06-23 10:04:49.221584: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 10:04:49.224252: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 10:04:49.349956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:49.350802: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:49.354392: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:49.355226: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:49.358513: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:49.359743: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:49.363414: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:49.365953: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:49.372318: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:49.377914: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:49.379104: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-23 10:04:49.389587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-23 10:04:49.390647: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:49.391762: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-23 10:04:49.392658: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-23 10:04:49.393505: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 10:04:49.394360: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 10:04:49.395248: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 10:04:49.396053: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-23 10:04:49.396781: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-23 10:04:49.432914: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 10:04:49.433835: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-23 10:04:50.570461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 10:04:50.571361: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 10:04:50.572061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 10:04:50.595003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-23 10:04:50.596299: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_100000_NI_3/punet_iteration_150000.ckpt
+2021-06-23 10:04:50.960398: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-23 10:04:50.990647: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2099875000 Hz
+['../raw_images_night/test_images//MTK_RAW/']
+amount of photos found: 10
+Processing image 2036.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-23 10:04:52.019746: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:529 : Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+Traceback (most recent call last):
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1359, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1451, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+	 [[output_l0/_129]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[{{node generator/Conv2D}}]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 85, in <module>
+    enhanced_tensor = sess.run(enhanced, feed_dict={x_: image})
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1368, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/client/session.py", line 1394, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+	 [[output_l0/_129]]
+  (1) Invalid argument: input depth must be evenly divisible by filter depth: 4 vs 12
+	 [[node generator/Conv2D (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py:124) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Errors may have originated from an input operation.
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Input Source operations connected to node generator/Conv2D:
+ Placeholder (defined at srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py:33)
+
+Original stack trace for 'generator/Conv2D':
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 37, in <module>
+    enhanced = PUNET(x_, instance_norm=inst_norm, instance_norm_level_1=False, num_maps_base=num_maps_base)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 15, in PUNET
+    conv_l1_d1 = _conv_multi_block(input, 3, num_maps=num_maps_base, instance_norm=False)              # 128 -> 128
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 81, in _conv_multi_block
+    conv_3a = _conv_layer(input, num_maps, 3, 1, relu=True, instance_norm=instance_norm)
+  File "srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/model.py", line 124, in _conv_layer
+    net = tf.nn.conv2d(net, weights_init, strides_shape, padding=padding) + bias
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2163, in conv2d_v2
+    return conv2d(input,  # pylint: disable=redefined-builtin
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 2270, in conv2d
+    return gen_nn_ops.conv2d(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 969, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1990, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+All done

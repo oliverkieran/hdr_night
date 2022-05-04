@@ -1,0 +1,727 @@
+2021-06-19 11:22:53.261661: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 50000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:23:00.679795: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:23:00.682661: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:23:00.919907: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:00.920992: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:00.926669: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:00.927704: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:00.931699: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:00.933994: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:00.938671: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:00.942013: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:00.949690: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:00.958847: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:00.960265: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:23:00.967081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:00.968178: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:00.969181: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:00.970218: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:00.971210: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:00.972279: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:00.973211: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:00.974258: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:00.975293: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:00.996097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:00.997440: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:02.336673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:23:02.337878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:23:02.338965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:23:02.359345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:23:02.360849: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_50000.ckpt
+2021-06-19 11:23:02.807320: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:23:02.838358: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:23:07.093025: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:08.734563: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:23:14.510193: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 55000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:23:16.865135: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:23:16.868113: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:23:17.034640: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:17.035739: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:17.039865: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:17.040868: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:17.044334: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:17.045873: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:17.049459: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:17.051980: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:17.058289: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:17.072031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:17.073562: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:23:17.081136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:17.082089: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:17.083059: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:17.084017: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:17.084972: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:17.087096: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:17.088106: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:17.091886: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:17.093902: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:17.111905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:17.113029: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:18.773709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:23:18.774830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:23:18.776565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:23:18.783978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:23:18.786976: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_55000.ckpt
+2021-06-19 11:23:19.222193: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:23:19.254382: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:23:22.037826: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:23.671405: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:23:29.517841: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 60000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:23:31.723804: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:23:31.726594: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:23:31.996031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:31.997110: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:32.001894: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:32.002858: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:32.006639: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:32.011137: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:32.015832: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:32.018737: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:32.026665: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:32.060546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:32.062247: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:23:32.073303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:32.074228: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:32.075218: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:32.076143: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:32.077177: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:32.078128: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:32.079110: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:32.079981: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:32.080834: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:32.095747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:32.096836: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:33.649892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:23:33.650969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:23:33.652453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:23:33.703904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:23:33.705563: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_60000.ckpt
+2021-06-19 11:23:34.164867: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:23:34.198358: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:23:37.133679: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:38.781527: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:23:44.417152: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 65000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:23:46.630967: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:23:46.633960: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:23:46.856691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:46.858703: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:46.862271: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:46.863356: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:46.866436: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:46.868002: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:46.871211: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:46.873566: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:46.879200: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:46.886794: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:46.888213: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:23:46.895385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:23:46.896532: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:46.897697: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:23:46.898699: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:23:46.902080: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:23:46.908193: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:23:46.909667: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:23:46.910644: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:23:46.911843: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:46.919118: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:23:46.920249: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:23:48.373347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:23:48.378178: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:23:48.379370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:23:48.469633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:23:48.471217: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_65000.ckpt
+2021-06-19 11:23:48.918892: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:23:48.946401: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:23:51.735604: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:23:53.406262: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:23:59.036629: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 70000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:24:03.442585: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:24:03.445472: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:24:03.620839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:03.623212: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:03.630746: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:03.632078: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:03.636051: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:03.641218: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:03.646524: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:03.650104: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:03.657131: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:03.683121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:03.684985: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:24:03.721723: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:03.723093: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:03.724230: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:03.725276: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:03.726327: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:03.727346: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:03.728281: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:03.729205: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:03.730241: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:03.738579: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:03.739719: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:05.124615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:24:05.125650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:24:05.126426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:24:05.140053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:24:05.141249: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_70000.ckpt
+2021-06-19 11:24:05.567493: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:24:05.598367: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:24:08.959283: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:10.587120: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:24:16.308044: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 75000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:24:18.477817: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:24:18.480798: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:24:18.560061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:18.561142: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:18.564362: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:18.565426: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:18.568476: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:18.570002: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:18.573452: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:18.575852: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:18.581363: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:18.603530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:18.604940: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:24:18.609231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:18.610362: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:18.611295: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:18.612327: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:18.613246: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:18.614206: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:18.615182: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:18.616198: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:18.617233: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:18.628527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:18.630183: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:19.971318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:24:19.973355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:24:19.974336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:24:20.014637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:24:20.018378: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_75000.ckpt
+2021-06-19 11:24:20.438986: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:24:20.470344: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:24:23.082938: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:24.695557: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:24:30.421159: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 80000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:24:32.609939: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:24:32.612744: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:24:32.833491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:32.834404: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:32.837837: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:32.838691: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:32.841862: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:32.843058: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:32.846177: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:32.848366: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:32.854234: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:32.862169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:32.863550: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:24:32.880053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:32.880972: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:32.881871: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:32.882672: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:32.883545: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:32.884497: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:32.885399: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:32.886118: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:32.887065: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:32.903446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:32.904678: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:34.497810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:24:34.505487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:24:34.507493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:24:34.527561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:24:34.533916: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_80000.ckpt
+2021-06-19 11:24:34.972995: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:24:35.010367: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:24:37.705881: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:39.328342: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:24:44.879990: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 85000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:24:47.052580: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:24:47.055451: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:24:47.256107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:47.257318: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:47.260763: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:47.261816: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:47.264839: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:47.266106: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:47.269480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:47.271559: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:47.277259: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:47.282682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:47.284063: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:24:47.312011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:24:47.313101: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:47.314212: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:24:47.315130: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:24:47.316190: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:24:47.317121: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:24:47.317939: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:24:47.318972: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:24:47.320000: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:47.338667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:24:47.339961: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:24:48.568560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:24:48.573610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:24:48.574529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:24:48.604636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:24:48.606651: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_85000.ckpt
+2021-06-19 11:24:49.007726: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:24:49.038330: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:24:52.057914: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:24:53.615193: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:24:59.221029: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 90000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:25:02.623224: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:25:02.626209: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:25:02.816895: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:25:02.818899: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:02.825788: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:25:02.826763: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:25:02.831456: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:25:02.833076: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:25:02.838271: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:25:02.841653: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:25:02.851140: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:02.892786: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:25:02.894387: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:25:02.909865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:25:02.910712: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:02.911687: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:25:02.912594: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:25:02.913406: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:25:02.914287: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:25:02.915186: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:25:02.915987: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:25:02.916939: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:02.929823: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:25:02.930692: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:04.338523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:25:04.339567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:25:04.340471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:25:04.394095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:25:04.396358: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_90000.ckpt
+2021-06-19 11:25:04.847717: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:25:04.878348: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:25:08.106460: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:09.745529: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:25:15.202855: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 95000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:25:18.040337: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:25:18.043240: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:25:18.252725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:25:18.253859: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:18.259383: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:25:18.260524: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:25:18.271921: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:25:18.274465: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:25:18.280266: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:25:18.283573: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:25:18.291044: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:18.296800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:25:18.298298: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:25:18.318632: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:25:18.319744: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:18.320866: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:25:18.321954: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:25:18.323006: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:25:18.325166: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:25:18.326196: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:25:18.327197: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:25:18.331301: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:18.349269: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:25:18.350480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:19.753705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:25:19.755950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:25:19.756884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:25:19.796280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:25:19.798549: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_95000.ckpt
+2021-06-19 11:25:20.217682: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:25:20.246327: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:25:22.903974: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:24.580406: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+2021-06-19 11:25:30.317184: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+The following parameters will be applied for testing:
+Model architecture: punet
+Restore Iteration: 100000
+Path to the dataset: ../raw_images_night/
+Path to Raw-to-RGB model network: models/punet/learning_R_5e-05_RI_0_NI_1/
+Path to result images: results/full_res_test_results/
+Path to testing data: png_images/
+num_input_images: 1
+2021-06-19 11:25:32.502831: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-19 11:25:32.505812: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-19 11:25:32.638299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:25:32.639338: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:32.642734: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:25:32.643752: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:25:32.646614: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:25:32.648056: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:25:32.651843: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:25:32.654544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:25:32.660853: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:32.670556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:25:32.672011: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-19 11:25:32.728258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-06-19 11:25:32.729601: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:32.730665: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-19 11:25:32.731714: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-19 11:25:32.732643: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-19 11:25:32.733506: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-19 11:25:32.734409: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-19 11:25:32.735307: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-19 11:25:32.736285: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:32.774488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-19 11:25:32.775900: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-19 11:25:34.258284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 11:25:34.259577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-19 11:25:34.261011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-19 11:25:34.311017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10262 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2021-06-19 11:25:34.312818: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+restoring model:  models/punet/learning_R_5e-05_RI_0_NI_1/punet_iteration_100000.ckpt
+2021-06-19 11:25:34.730625: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-19 11:25:34.762359: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100040000 Hz
+['../raw_images_night/png_images//MTK_RAW/']
+amount of photos found: 160
+Processing image 186.png
+(3000, 4000)
+(1488, 1984, 4)
+2021-06-19 11:25:37.562769: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-19 11:25:39.141489: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Creation of the directory results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186/ failed
+Traceback (most recent call last):
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/test_model.py", line 97, in <module>
+    imageio.imwrite(path + str(restore_iter) + "_" + "_NI_" + str(num_input_images) + "_" + photo_name + ".png", enhanced_image)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 303, in imwrite
+    writer = get_writer(uri, format, "i", **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/functions.py", line 217, in get_writer
+    request = Request(uri, "w" + mode, **kwargs)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/imageio/core/request.py", line 265, in _parse_uri
+    raise FileNotFoundError("The directory %r does not exist" % dn)
+FileNotFoundError: The directory '/srv/beegfs02/scratch/hdr_night/data/hdr_night/learned_isp_night/results/full_res_test_results/learning_R_5e-05_RI_0_NI_1/186' does not exist
+All done
