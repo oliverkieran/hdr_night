@@ -1,0 +1,276 @@
+2021-06-09 00:12:42.806151: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+The following parameters will be applied for training:
+Model architecture: punet
+Restore Iteration: 0
+Batch size: 32
+Training size: 5000
+Learning rate: 1e-05
+Training iterations: 100000
+Evaluation step: 1000
+Path to the dataset: ../raw_images/
+Path to Raw-to-RGB model network: models/punet/
+Path to result images: results/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Path to RGB data from DSLR: fujifilm/
+Path to Raw data from phone: mediatek_raw/
+2021-06-09 00:12:54.828391: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-09 00:12:54.832737: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-09 00:12:54.874942: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:87:00.0 name: GeForce GTX TITAN X computeCapability: 5.2
+coreClock: 1.076GHz coreCount: 24 deviceMemorySize: 11.93GiB deviceMemoryBandwidth: 313.37GiB/s
+2021-06-09 00:12:54.876085: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-09 00:12:55.280421: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-09 00:12:55.281694: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-09 00:12:55.652099: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-09 00:12:56.274017: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-09 00:12:56.622635: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-09 00:12:56.875653: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-09 00:12:57.566356: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-09 00:12:57.571195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-09 00:12:57.572557: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-09 00:12:57.575558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:87:00.0 name: GeForce GTX TITAN X computeCapability: 5.2
+coreClock: 1.076GHz coreCount: 24 deviceMemorySize: 11.93GiB deviceMemoryBandwidth: 313.37GiB/s
+2021-06-09 00:12:57.576534: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-09 00:12:57.577537: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-06-09 00:12:57.578463: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-06-09 00:12:57.579426: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-09 00:12:57.581039: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-09 00:12:57.583223: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-09 00:12:57.584083: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-06-09 00:12:57.585333: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-09 00:12:57.591346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-09 00:12:57.592406: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-06-09 00:13:01.479281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-09 00:13:01.481613: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-09 00:13:01.483032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-09 00:13:01.488892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11268 MB memory) -> physical GPU (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:87:00.0, compute capability: 5.2)
+2021-06-09 00:13:01.490182: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Initializing variables...
+2021-06-09 00:13:18.902625: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-06-09 00:13:18.983380: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2600030000 Hz
+Loading validation data...
+Data_set: ../raw_images/ 
+
+DSLR: fujifilm/ 
+
+phone_dir: mediatek_raw/ 
+
+Validation data was loaded. (1813)
+
+Loading training data...
+Training data was loaded
+
+Training network...
+2021-06-09 00:24:35.562779: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-06-09 00:24:39.734644: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+step 0 | training: 0.01944, validation: 23.6 | content: 12.04, mse: 0.07744, psnr: 11.17, ms-ssim: 0.4232
+
+step 1000 | training: 21.32, validation: 20.84 | content: 12.06, mse: 0.03353, psnr: 14.9, ms-ssim: 0.6873
+
+step 2000 | training: 18.56, validation: 19.06 | content: 11.76, mse: 0.01556, psnr: 18.25, ms-ssim: 0.8209
+
+step 3000 | training: 17.74, validation: 18.51 | content: 11.57, mse: 0.01391, psnr: 18.75, ms-ssim: 0.8446
+
+step 4000 | training: 17.4, validation: 18.2 | content: 11.45, mse: 0.01378, psnr: 18.79, ms-ssim: 0.8556
+
+step 5000 | training: 17.22, validation: 17.88 | content: 11.32, mse: 0.01321, psnr: 18.98, ms-ssim: 0.8657
+
+step 6000 | training: 16.77, validation: 17.69 | content: 11.24, mse: 0.0133, psnr: 18.96, ms-ssim: 0.8696
+
+step 7000 | training: 16.7, validation: 17.47 | content: 11.1, mse: 0.01292, psnr: 19.09, ms-ssim: 0.8723
+
+step 8000 | training: 16.56, validation: 17.39 | content: 11.09, mse: 0.01378, psnr: 18.83, ms-ssim: 0.8744
+
+step 9000 | training: 16.28, validation: 17.19 | content: 10.96, mse: 0.01274, psnr: 19.15, ms-ssim: 0.8771
+
+step 10000 | training: 15.97, validation: 17.08 | content: 10.94, mse: 0.01287, psnr: 19.12, ms-ssim: 0.8799
+
+step 11000 | training: 16.12, validation: 16.95 | content: 10.9, mse: 0.01265, psnr: 19.2, ms-ssim: 0.8829
+
+step 12000 | training: 15.81, validation: 16.83 | content: 10.84, mse: 0.01303, psnr: 19.06, ms-ssim: 0.8846
+
+step 13000 | training: 15.87, validation: 16.68 | content: 10.78, mse: 0.0124, psnr: 19.28, ms-ssim: 0.8876
+
+step 14000 | training: 15.75, validation: 16.52 | content: 10.68, mse: 0.01219, psnr: 19.35, ms-ssim: 0.8895
+
+step 15000 | training: 15.56, validation: 16.39 | content: 10.59, mse: 0.01233, psnr: 19.29, ms-ssim: 0.8913
+
+step 16000 | training: 15.34, validation: 16.24 | content: 10.56, mse: 0.01224, psnr: 19.34, ms-ssim: 0.8944
+
+step 17000 | training: 15.21, validation: 16.08 | content: 10.47, mse: 0.01179, psnr: 19.5, ms-ssim: 0.8963
+
+step 18000 | training: 15.2, validation: 15.93 | content: 10.38, mse: 0.01158, psnr: 19.59, ms-ssim: 0.8985
+
+step 19000 | training: 15.06, validation: 15.77 | content: 10.33, mse: 0.01196, psnr: 19.45, ms-ssim: 0.9007
+
+step 20000 | training: 14.84, validation: 15.62 | content: 10.21, mse: 0.01145, psnr: 19.64, ms-ssim: 0.9021
+
+step 21000 | training: 14.62, validation: 15.45 | content: 10.14, mse: 0.0115, psnr: 19.62, ms-ssim: 0.9042
+
+step 22000 | training: 14.58, validation: 15.29 | content: 10.1, mse: 0.01158, psnr: 19.6, ms-ssim: 0.9067
+
+step 23000 | training: 14.46, validation: 15.12 | content: 9.975, mse: 0.01126, psnr: 19.72, ms-ssim: 0.9079
+
+step 24000 | training: 13.89, validation: 14.95 | content: 9.896, mse: 0.01116, psnr: 19.76, ms-ssim: 0.91
+
+step 25000 | training: 14.17, validation: 14.8 | content: 9.839, mse: 0.01152, psnr: 19.63, ms-ssim: 0.9118
+
+step 26000 | training: 13.96, validation: 14.59 | content: 9.672, mse: 0.01102, psnr: 19.82, ms-ssim: 0.9128
+
+step 27000 | training: 13.6, validation: 14.39 | content: 9.518, mse: 0.0109, psnr: 19.87, ms-ssim: 0.9138
+
+step 28000 | training: 13.48, validation: 14.1 | content: 9.403, mse: 0.01094, psnr: 19.87, ms-ssim: 0.9168
+
+step 29000 | training: 13.18, validation: 13.78 | content: 9.183, mse: 0.01086, psnr: 19.91, ms-ssim: 0.9187
+
+step 30000 | training: 12.74, validation: 13.42 | content: 8.917, mse: 0.01077, psnr: 19.95, ms-ssim: 0.9203
+
+step 31000 | training: 12.44, validation: 13.06 | content: 8.665, mse: 0.0105, psnr: 20.08, ms-ssim: 0.9224
+
+step 32000 | training: 12.33, validation: 12.76 | content: 8.441, mse: 0.01023, psnr: 20.2, ms-ssim: 0.9238
+
+step 33000 | training: 12.17, validation: 12.54 | content: 8.272, mse: 0.01022, psnr: 20.22, ms-ssim: 0.9246
+
+step 34000 | training: 11.73, validation: 12.38 | content: 8.143, mse: 0.01055, psnr: 20.09, ms-ssim: 0.9249
+
+step 35000 | training: 11.63, validation: 12.21 | content: 8.006, mse: 0.01014, psnr: 20.26, ms-ssim: 0.9259
+
+step 36000 | training: 11.35, validation: 12.07 | content: 7.883, mse: 0.0101, psnr: 20.28, ms-ssim: 0.9261
+
+step 37000 | training: 11.23, validation: 11.94 | content: 7.76, mse: 0.01006, psnr: 20.29, ms-ssim: 0.9261
+
+step 38000 | training: 11.18, validation: 11.83 | content: 7.682, mse: 0.01019, psnr: 20.25, ms-ssim: 0.9265
+
+step 39000 | training: 11.2, validation: 11.72 | content: 7.586, mse: 0.01001, psnr: 20.32, ms-ssim: 0.9269
+
+step 40000 | training: 11.07, validation: 11.61 | content: 7.482, mse: 0.009957, psnr: 20.35, ms-ssim: 0.927
+
+step 41000 | training: 11.03, validation: 11.52 | content: 7.403, mse: 0.009852, psnr: 20.39, ms-ssim: 0.9271
+
+step 42000 | training: 10.9, validation: 11.46 | content: 7.361, mse: 0.009974, psnr: 20.35, ms-ssim: 0.9275
+
+step 43000 | training: 10.82, validation: 11.41 | content: 7.309, mse: 0.01012, psnr: 20.29, ms-ssim: 0.9276
+
+step 44000 | training: 10.64, validation: 11.34 | content: 7.252, mse: 0.01007, psnr: 20.32, ms-ssim: 0.9279
+
+step 45000 | training: 10.73, validation: 11.24 | content: 7.173, mse: 0.009804, psnr: 20.43, ms-ssim: 0.9282
+
+step 46000 | training: 10.73, validation: 11.21 | content: 7.152, mse: 0.009975, psnr: 20.36, ms-ssim: 0.9284
+
+step 47000 | training: 10.45, validation: 11.13 | content: 7.082, mse: 0.009661, psnr: 20.48, ms-ssim: 0.9286
+
+step 48000 | training: 10.48, validation: 11.12 | content: 7.037, mse: 0.009562, psnr: 20.53, ms-ssim: 0.9284
+
+step 49000 | training: 10.45, validation: 11.06 | content: 7.034, mse: 0.009897, psnr: 20.39, ms-ssim: 0.9289
+
+step 50000 | training: 10.43, validation: 11.01 | content: 7.003, mse: 0.009776, psnr: 20.44, ms-ssim: 0.9293
+
+step 51000 | training: 10.36, validation: 10.98 | content: 6.948, mse: 0.009482, psnr: 20.57, ms-ssim: 0.9293
+
+step 52000 | training: 10.29, validation: 10.92 | content: 6.932, mse: 0.009627, psnr: 20.5, ms-ssim: 0.9296
+
+step 53000 | training: 10.3, validation: 10.95 | content: 6.963, mse: 0.01003, psnr: 20.34, ms-ssim: 0.9296
+
+step 54000 | training: 10.1, validation: 10.87 | content: 6.907, mse: 0.009784, psnr: 20.44, ms-ssim: 0.93
+
+step 55000 | training: 10.24, validation: 10.81 | content: 6.861, mse: 0.00958, psnr: 20.53, ms-ssim: 0.9301
+
+step 56000 | training: 10.19, validation: 10.78 | content: 6.835, mse: 0.009493, psnr: 20.56, ms-ssim: 0.9302
+
+step 57000 | training: 10.18, validation: 10.76 | content: 6.823, mse: 0.009659, psnr: 20.49, ms-ssim: 0.9303
+
+step 58000 | training: 10.15, validation: 10.72 | content: 6.796, mse: 0.009531, psnr: 20.55, ms-ssim: 0.9307
+
+step 59000 | training: 10.19, validation: 10.7 | content: 6.792, mse: 0.009616, psnr: 20.51, ms-ssim: 0.9308
+
+step 60000 | training: 10.25, validation: 10.67 | content: 6.764, mse: 0.009657, psnr: 20.49, ms-ssim: 0.9308
+
+step 61000 | training: 9.949, validation: 10.64 | content: 6.736, mse: 0.009435, psnr: 20.59, ms-ssim: 0.9311
+
+step 62000 | training: 10.1, validation: 10.63 | content: 6.734, mse: 0.009696, psnr: 20.48, ms-ssim: 0.931
+
+step 63000 | training: 10.24, validation: 10.59 | content: 6.693, mse: 0.009366, psnr: 20.62, ms-ssim: 0.9311
+
+step 64000 | training: 10.04, validation: 10.61 | content: 6.722, mse: 0.00985, psnr: 20.42, ms-ssim: 0.9311
+
+step 65000 | training: 9.973, validation: 10.56 | content: 6.695, mse: 0.009505, psnr: 20.56, ms-ssim: 0.9316
+
+step 66000 | training: 9.99, validation: 10.53 | content: 6.675, mse: 0.009493, psnr: 20.57, ms-ssim: 0.9317
+
+step 67000 | training: 10.03, validation: 10.52 | content: 6.657, mse: 0.009557, psnr: 20.54, ms-ssim: 0.9315
+
+step 68000 | training: 10.07, validation: 10.55 | content: 6.671, mse: 0.01002, psnr: 20.34, ms-ssim: 0.9312
+
+step 69000 | training: 9.862, validation: 10.48 | content: 6.634, mse: 0.009527, psnr: 20.55, ms-ssim: 0.9318
+
+step 70000 | training: 9.794, validation: 10.47 | content: 6.626, mse: 0.009584, psnr: 20.53, ms-ssim: 0.9317
+
+step 71000 | training: 9.941, validation: 10.45 | content: 6.616, mse: 0.00945, psnr: 20.59, ms-ssim: 0.9321
+
+step 72000 | training: 9.964, validation: 10.44 | content: 6.607, mse: 0.009558, psnr: 20.54, ms-ssim: 0.932
+
+step 73000 | training: 9.975, validation: 10.43 | content: 6.574, mse: 0.009249, psnr: 20.68, ms-ssim: 0.9319
+
+step 74000 | training: 9.886, validation: 10.44 | content: 6.61, mse: 0.009741, psnr: 20.46, ms-ssim: 0.932
+
+step 75000 | training: 9.966, validation: 10.4 | content: 6.559, mse: 0.009198, psnr: 20.71, ms-ssim: 0.9322
+
+step 76000 | training: 9.741, validation: 10.39 | content: 6.568, mse: 0.009408, psnr: 20.61, ms-ssim: 0.9323
+
+step 77000 | training: 9.709, validation: 10.37 | content: 6.558, mse: 0.009464, psnr: 20.59, ms-ssim: 0.9325
+
+step 78000 | training: 9.822, validation: 10.35 | content: 6.549, mse: 0.009337, psnr: 20.65, ms-ssim: 0.9326
+
+step 79000 | training: 9.707, validation: 10.36 | content: 6.549, mse: 0.009494, psnr: 20.57, ms-ssim: 0.9324
+
+step 80000 | training: 9.651, validation: 10.35 | content: 6.545, mse: 0.009536, psnr: 20.55, ms-ssim: 0.9325
+
+step 81000 | training: 9.785, validation: 10.33 | content: 6.521, mse: 0.009288, psnr: 20.66, ms-ssim: 0.9326
+
+step 82000 | training: 9.73, validation: 10.31 | content: 6.52, mse: 0.009365, psnr: 20.63, ms-ssim: 0.9327
+
+step 83000 | training: 9.878, validation: 10.31 | content: 6.521, mse: 0.009396, psnr: 20.61, ms-ssim: 0.9327
+
+step 84000 | training: 9.819, validation: 10.35 | content: 6.532, mse: 0.009842, psnr: 20.42, ms-ssim: 0.9323
+
+step 85000 | training: 9.671, validation: 10.3 | content: 6.493, mse: 0.009172, psnr: 20.72, ms-ssim: 0.9327
+
+step 86000 | training: 9.78, validation: 10.29 | content: 6.497, mse: 0.009458, psnr: 20.58, ms-ssim: 0.9327
+
+step 87000 | training: 9.809, validation: 10.27 | content: 6.493, mse: 0.009372, psnr: 20.62, ms-ssim: 0.9329
+
+step 88000 | training: 9.749, validation: 10.27 | content: 6.479, mse: 0.009156, psnr: 20.72, ms-ssim: 0.933
+
+step 89000 | training: 9.722, validation: 10.27 | content: 6.487, mse: 0.009507, psnr: 20.56, ms-ssim: 0.9329
+
+step 90000 | training: 9.608, validation: 10.26 | content: 6.481, mse: 0.009345, psnr: 20.64, ms-ssim: 0.9329
+
+step 91000 | training: 9.727, validation: 10.27 | content: 6.482, mse: 0.00965, psnr: 20.5, ms-ssim: 0.9327
+
+step 92000 | training: 9.803, validation: 10.24 | content: 6.473, mse: 0.00919, psnr: 20.71, ms-ssim: 0.9331
+
+step 93000 | training: 9.58, validation: 10.23 | content: 6.458, mse: 0.009265, psnr: 20.67, ms-ssim: 0.933
+
+step 94000 | training: 9.684, validation: 10.23 | content: 6.467, mse: 0.009431, psnr: 20.6, ms-ssim: 0.933
+
+step 95000 | training: 9.494, validation: 10.25 | content: 6.477, mse: 0.009572, psnr: 20.53, ms-ssim: 0.933
+
+step 96000 | training: 9.776, validation: 10.22 | content: 6.458, mse: 0.009423, psnr: 20.6, ms-ssim: 0.9331
+
+step 97000 | training: 9.628, validation: 10.24 | content: 6.467, mse: 0.009561, psnr: 20.54, ms-ssim: 0.933
+
+step 98000 | training: 9.669, validation: 10.21 | content: 6.447, mse: 0.009317, psnr: 20.64, ms-ssim: 0.9331
+
+step 99000 | training: 9.645, validation: 10.2 | content: 6.443, mse: 0.009293, psnr: 20.65, ms-ssim: 0.9333
+
+step 100000 | training: 9.511, validation: 10.19 | content: 6.435, mse: 0.009234, psnr: 20.68, ms-ssim: 0.9333
+
+WARNING:tensorflow:From /itet-stor/skaeser/net_scratch/conda_envs/tencu10/lib/python3.9/site-packages/tensorflow/python/training/saver.py:968: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+total train/eval time: 1 day, 11:09:34.605047
