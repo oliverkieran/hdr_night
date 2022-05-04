@@ -1,0 +1,42 @@
+step 0 generator losses | train: 0.1985, val: 231.6 | content: 11.48, color: 8594, tv: 8.036e-06 | psnr: 10.16, ms-ssim: 0.3951
+
+step 1000 generator losses | train: 174.2, val: 160.3 | content: 7.978, color: 2033, tv: 0.0007658 | psnr: 16.36, ms-ssim: 0.8461
+
+step 2000 generator losses | train: 155.2, val: 152.2 | content: 7.58, color: 1379, tv: 0.0008834 | psnr: 17.92, ms-ssim: 0.8574
+
+step 3000 generator losses | train: 147.7, val: 145.6 | content: 7.251, color: 1383, tv: 0.000956 | psnr: 17.92, ms-ssim: 0.8689
+
+step 4000 generator losses | train: 142.3, val: 142 | content: 7.07, color: 1176, tv: 0.001046 | psnr: 18.52, ms-ssim: 0.8651
+
+step 5000 generator losses | train: 140.2, val: 141.2 | content: 7.032, color: 1144, tv: 0.001132 | psnr: 18.65, ms-ssim: 0.8704
+
+step 6000 generator losses | train: 138, val: 138.7 | content: 6.907, color: 1024, tv: 0.001154 | psnr: 19.05, ms-ssim: 0.8711
+
+step 7000 generator losses | train: 137.6, val: 137.3 | content: 6.838, color: 1105, tv: 0.001212 | psnr: 18.76, ms-ssim: 0.8694
+
+step 8000 generator losses | train: 133.7, val: 137.1 | content: 6.831, color: 1023, tv: 0.001273 | psnr: 19.04, ms-ssim: 0.8715
+
+step 9000 generator losses | train: 136, val: 136 | content: 6.773, color: 1003, tv: 0.001184 | psnr: 19.12, ms-ssim: 0.8722
+
+step 10000 generator losses | train: 132.8, val: 136.5 | content: 6.8, color: 971.5, tv: 0.001371 | psnr: 19.26, ms-ssim: 0.8754
+
+step 11000 generator losses | train: 132.1, val: 135.9 | content: 6.77, color: 1021, tv: 0.001284 | psnr: 19.05, ms-ssim: 0.8688
+
+step 12000 generator losses | train: 134.3, val: 135 | content: 6.725, color: 1032, tv: 0.001099 | psnr: 18.99, ms-ssim: 0.868
+
+step 13000 generator losses | train: 132.4, val: 134.3 | content: 6.69, color: 1008, tv: 0.001161 | psnr: 19.09, ms-ssim: 0.8702
+
+step 14000 generator losses | train: 132.3, val: 133.1 | content: 6.629, color: 953, tv: 0.00137 | psnr: 19.3, ms-ssim: 0.8717
+
+step 15000 generator losses | train: 129.4, val: 133.1 | content: 6.631, color: 905, tv: 0.001363 | psnr: 19.51, ms-ssim: 0.8724
+
+step 16000 generator losses | train: 130.3, val: 132.4 | content: 6.594, color: 867.7, tv: 0.001314 | psnr: 19.68, ms-ssim: 0.873
+
+step 17000 generator losses | train: 130.3, val: 133 | content: 6.625, color: 927.8, tv: 0.001253 | psnr: 19.4, ms-ssim: 0.8747
+
+step 18000 generator losses | train: 128.6, val: 132.7 | content: 6.606, color: 1095, tv: 0.001389 | psnr: 18.77, ms-ssim: 0.8697
+
+step 19000 generator losses | train: 127, val: 131.2 | content: 6.536, color: 929, tv: 0.001385 | psnr: 19.42, ms-ssim: 0.8762
+
+step 20000 generator losses | train: 129, val: 131.3 | content: 6.54, color: 921.1, tv: 0.001377 | psnr: 19.44, ms-ssim: 0.8739
+

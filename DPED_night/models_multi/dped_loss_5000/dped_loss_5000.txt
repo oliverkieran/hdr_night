@@ -1,0 +1,16 @@
+step 17000 generator losses | train: 1402, val: 820.7 | content: 11.76, color: 580.2, tv: 0.0006099 | psnr: 20.26, ms-ssim: 0.8232
+
+step 18000 generator losses | train: 904.3, val: 861.4 | content: 11.48, color: 626.5, tv: 0.0006784 | psnr: 20.28, ms-ssim: 0.837
+
+step 19000 generator losses | train: 866.4, val: 991 | content: 11.3, color: 759.8, tv: 0.0006107 | psnr: 19.77, ms-ssim: 0.8417
+
+step 20000 generator losses | train: 822, val: 735.6 | content: 11.12, color: 508.7, tv: 0.0005335 | psnr: 21.02, ms-ssim: 0.854
+
+step 21000 generator losses | train: 804.9, val: 821.7 | content: 10.74, color: 602.4, tv: 0.0005318 | psnr: 20.69, ms-ssim: 0.859
+
+step 22000 generator losses | train: 775.7, val: 711.5 | content: 10.46, color: 498.2, tv: 0.0004827 | psnr: 21.3, ms-ssim: 0.8661
+
+step 23000 generator losses | train: 787.5, val: 727.9 | content: 10.27, color: 518.4, tv: 0.0005296 | psnr: 21.29, ms-ssim: 0.8705
+
+step 24000 generator losses | train: 756.4, val: 710.7 | content: 10.13, color: 504.2, tv: 0.0005102 | psnr: 21.38, ms-ssim: 0.8733
+

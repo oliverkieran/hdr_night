@@ -1,0 +1,141 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+
+The following parameters will be applied for CNN training:
+
+Batch size: 32
+Train size: 5000
+Learning rate: 0.0001
+Training iterations: 20000
+Restore iteration at: 0
+
+Loss: pynet
+Path to DPED dataset: ../../crops/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Evaluation step: 1000
+Run Id: pynet_loss
+Input Images: 3
+
+2021-06-17 15:57:27.474656: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-17 15:57:27.513897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:05:00.0
+2021-06-17 15:57:27.520074: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-17 15:57:27.524317: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-17 15:57:27.528102: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-17 15:57:27.530809: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-17 15:57:27.535432: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-17 15:57:27.539623: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-17 15:57:27.547418: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-17 15:57:27.553008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-17 15:57:27.554362: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-17 15:57:27.582177: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199845000 Hz
+2021-06-17 15:57:27.583520: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558565835290 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-17 15:57:27.584734: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-17 15:57:27.589177: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:05:00.0
+2021-06-17 15:57:27.590179: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-17 15:57:27.591242: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-17 15:57:27.592234: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-17 15:57:27.593286: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-17 15:57:27.594358: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-17 15:57:27.595347: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-17 15:57:27.596485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-17 15:57:27.603526: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-17 15:57:27.604643: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-17 15:57:27.702064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-17 15:57:27.703154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-17 15:57:27.704071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-17 15:57:27.710731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11497 MB memory) -> physical GPU (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0, compute capability: 5.2)
+2021-06-17 15:57:27.715171: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55856644c440 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-17 15:57:27.716231: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX TITAN X, Compute Capability 5.2
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/DPED_night/vgg.py:49: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Initializing variables
+Loading validation data...
+Validation data was loaded
+
+Loading training data...
+Training data was loaded
+
+Training network
+2021-06-17 16:24:41.596885: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-17 16:24:42.536764: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-17 16:24:42.719829: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-17 16:24:44.901451: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-17 16:24:46.079842: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.34GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-17 16:24:46.285395: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-17 16:24:46.325308: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-17 16:24:46.438525: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-17 16:24:47.702822: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+step 0 generator losses | train: 0.1985, val: 231.6 | content: 11.48, color: 8594, tv: 8.036e-06 | psnr: 10.16, ms-ssim: 0.3951
+
+current train/eval time: 0:28:06.422342
+step 1000 generator losses | train: 174.2, val: 160.3 | content: 7.978, color: 2033, tv: 0.0007658 | psnr: 16.36, ms-ssim: 0.8461
+
+current train/eval time: 1:14:34.697565
+step 2000 generator losses | train: 155.2, val: 152.2 | content: 7.58, color: 1379, tv: 0.0008834 | psnr: 17.92, ms-ssim: 0.8574
+
+current train/eval time: 2:00:50.138494
+step 3000 generator losses | train: 147.7, val: 145.6 | content: 7.251, color: 1383, tv: 0.000956 | psnr: 17.92, ms-ssim: 0.8689
+
+current train/eval time: 2:46:50.768122
+step 4000 generator losses | train: 142.3, val: 142 | content: 7.07, color: 1176, tv: 0.001046 | psnr: 18.52, ms-ssim: 0.8651
+
+current train/eval time: 3:31:51.320907
+step 5000 generator losses | train: 140.2, val: 141.2 | content: 7.032, color: 1144, tv: 0.001132 | psnr: 18.65, ms-ssim: 0.8704
+
+current train/eval time: 4:16:32.648964
+step 6000 generator losses | train: 138, val: 138.7 | content: 6.907, color: 1024, tv: 0.001154 | psnr: 19.05, ms-ssim: 0.8711
+
+current train/eval time: 5:01:05.307516
+step 7000 generator losses | train: 137.6, val: 137.3 | content: 6.838, color: 1105, tv: 0.001212 | psnr: 18.76, ms-ssim: 0.8694
+
+current train/eval time: 5:45:50.640687
+step 8000 generator losses | train: 133.7, val: 137.1 | content: 6.831, color: 1023, tv: 0.001273 | psnr: 19.04, ms-ssim: 0.8715
+
+current train/eval time: 6:30:30.308851
+step 9000 generator losses | train: 136, val: 136 | content: 6.773, color: 1003, tv: 0.001184 | psnr: 19.12, ms-ssim: 0.8722
+
+current train/eval time: 7:14:20.909336
+step 10000 generator losses | train: 132.8, val: 136.5 | content: 6.8, color: 971.5, tv: 0.001371 | psnr: 19.26, ms-ssim: 0.8754
+
+current train/eval time: 7:59:52.822475
+step 11000 generator losses | train: 132.1, val: 135.9 | content: 6.77, color: 1021, tv: 0.001284 | psnr: 19.05, ms-ssim: 0.8688
+
+current train/eval time: 8:44:21.184794
+step 12000 generator losses | train: 134.3, val: 135 | content: 6.725, color: 1032, tv: 0.001099 | psnr: 18.99, ms-ssim: 0.868
+
+current train/eval time: 9:28:39.938700
+step 13000 generator losses | train: 132.4, val: 134.3 | content: 6.69, color: 1008, tv: 0.001161 | psnr: 19.09, ms-ssim: 0.8702
+
+current train/eval time: 10:13:09.932153
+step 14000 generator losses | train: 132.3, val: 133.1 | content: 6.629, color: 953, tv: 0.00137 | psnr: 19.3, ms-ssim: 0.8717
+
+current train/eval time: 10:57:12.069927
+2021-06-18 03:19:09.473459: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 585.00MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+step 15000 generator losses | train: 129.4, val: 133.1 | content: 6.631, color: 905, tv: 0.001363 | psnr: 19.51, ms-ssim: 0.8724
+
+current train/eval time: 11:41:55.759873
+step 16000 generator losses | train: 130.3, val: 132.4 | content: 6.594, color: 867.7, tv: 0.001314 | psnr: 19.68, ms-ssim: 0.873
+
+current train/eval time: 12:26:05.347099
+step 17000 generator losses | train: 130.3, val: 133 | content: 6.625, color: 927.8, tv: 0.001253 | psnr: 19.4, ms-ssim: 0.8747
+
+current train/eval time: 13:08:32.679980
+step 18000 generator losses | train: 128.6, val: 132.7 | content: 6.606, color: 1095, tv: 0.001389 | psnr: 18.77, ms-ssim: 0.8697
+
+current train/eval time: 13:56:46.130980
+step 19000 generator losses | train: 127, val: 131.2 | content: 6.536, color: 929, tv: 0.001385 | psnr: 19.42, ms-ssim: 0.8762
+
+current train/eval time: 14:49:01.436645
+step 20000 generator losses | train: 129, val: 131.3 | content: 6.54, color: 921.1, tv: 0.001377 | psnr: 19.44, ms-ssim: 0.8739
+
+current train/eval time: 15:40:59.568512
+total train/eval time: 16:04:30.298225

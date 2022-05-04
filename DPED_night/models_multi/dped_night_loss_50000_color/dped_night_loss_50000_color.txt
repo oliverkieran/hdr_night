@@ -1,0 +1,90 @@
+step 51000 | discriminator accuracy | train: 0.8821, test: 0.7521
+step 51000 generator losses | train: 114.9, val: 102 | content: 10.95, color: 2613, texture: -14.28, tv: 0.0009161 | psnr: 15.44, ms-ssim: 0.7871
+
+step 52000 | discriminator accuracy | train: 0.8437, test: 0.7321
+step 52000 generator losses | train: 100.3, val: 89.93 | content: 9.849, color: 2469, texture: -14.68, tv: 0.001222 | psnr: 15.72, ms-ssim: 0.8273
+
+step 53000 | discriminator accuracy | train: 0.7543, test: 0.5909
+step 53000 generator losses | train: 89.88, val: 82.45 | content: 9.611, color: 2249, texture: -19.91, tv: 0.001586 | psnr: 16.11, ms-ssim: 0.8355
+
+step 54000 | discriminator accuracy | train: 0.7741, test: 0.6581
+step 54000 generator losses | train: 84.02, val: 82.09 | content: 9.574, color: 1119, texture: -18.9, tv: 0.001491 | psnr: 18.81, ms-ssim: 0.8496
+
+step 55000 | discriminator accuracy | train: 0.7576, test: 0.6029
+step 55000 generator losses | train: 85.19, val: 79.7 | content: 9.546, color: 1136, texture: -21.14, tv: 0.001553 | psnr: 18.61, ms-ssim: 0.839
+
+step 56000 | discriminator accuracy | train: 0.7979, test: 0.5562
+step 56000 generator losses | train: 82.33, val: 76.57 | content: 9.618, color: 817, texture: -24.47, tv: 0.001623 | psnr: 19.94, ms-ssim: 0.8655
+
+step 57000 | discriminator accuracy | train: 0.8378, test: 0.5368
+step 57000 generator losses | train: 80.94, val: 68.31 | content: 9.417, color: 848.4, texture: -30.68, tv: 0.001889 | psnr: 19.65, ms-ssim: 0.8565
+
+step 58000 | discriminator accuracy | train: 0.8299, test: 0.5152
+step 58000 generator losses | train: 79.05, val: 67.97 | content: 9.334, color: 740.2, texture: -30.06, tv: 0.002723 | psnr: 20.23, ms-ssim: 0.8643
+
+step 59000 | discriminator accuracy | train: 0.8612, test: 0.5699
+step 59000 generator losses | train: 75.22, val: 66.44 | content: 9.012, color: 689.7, texture: -28.08, tv: 0.002087 | psnr: 20.49, ms-ssim: 0.8712
+
+step 60000 | discriminator accuracy | train: 0.8797, test: 0.5268
+step 60000 generator losses | train: 74.02, val: 63.8 | content: 9.155, color: 702.2, texture: -32.19, tv: 0.002534 | psnr: 20.37, ms-ssim: 0.8693
+
+step 61000 | discriminator accuracy | train: 0.8941, test: 0.5347
+step 61000 generator losses | train: 65.88, val: 61.02 | content: 9.035, color: 700.4, texture: -33.78, tv: 0.002359 | psnr: 20.34, ms-ssim: 0.8688
+
+step 62000 | discriminator accuracy | train: 0.904, test: 0.5499
+step 62000 generator losses | train: 67.8, val: 60.86 | content: 9.063, color: 687.7, texture: -34.33, tv: 0.002417 | psnr: 20.41, ms-ssim: 0.8665
+
+step 63000 | discriminator accuracy | train: 0.9015, test: 0.5578
+step 63000 generator losses | train: 67.7, val: 61.44 | content: 9.103, color: 666.2, texture: -34.13, tv: 0.002726 | psnr: 20.46, ms-ssim: 0.8657
+
+step 64000 | discriminator accuracy | train: 0.9057, test: 0.5368
+step 64000 generator losses | train: 64.77, val: 56.53 | content: 9.076, color: 683.6, texture: -38.84, tv: 0.002815 | psnr: 20.29, ms-ssim: 0.866
+
+step 65000 | discriminator accuracy | train: 0.9196, test: 0.5441
+step 65000 generator losses | train: 64.66, val: 54.94 | content: 8.918, color: 689.8, texture: -38.67, tv: 0.002666 | psnr: 20.45, ms-ssim: 0.8695
+
+step 66000 | discriminator accuracy | train: 0.9223, test: 0.5273
+step 66000 generator losses | train: 64.92, val: 53.33 | content: 9.005, color: 686.4, texture: -41.38, tv: 0.002835 | psnr: 20.38, ms-ssim: 0.8672
+
+step 67000 | discriminator accuracy | train: 0.9188, test: 0.5499
+step 67000 generator losses | train: 62.22, val: 54.61 | content: 9.08, color: 696.3, texture: -40.89, tv: 0.003091 | psnr: 20.3, ms-ssim: 0.8683
+
+step 68000 | discriminator accuracy | train: 0.9236, test: 0.5347
+step 68000 generator losses | train: 60.51, val: 53.24 | content: 9.002, color: 684.8, texture: -41.27, tv: 0.002843 | psnr: 20.4, ms-ssim: 0.873
+
+step 69000 | discriminator accuracy | train: 0.9321, test: 0.5378
+step 69000 generator losses | train: 62.14, val: 48.19 | content: 9.005, color: 669.3, texture: -46.36, tv: 0.002939 | psnr: 20.42, ms-ssim: 0.87
+
+step 70000 | discriminator accuracy | train: 0.9299, test: 0.5368
+step 70000 generator losses | train: 60.75, val: 49.9 | content: 9.042, color: 705.3, texture: -45.23, tv: 0.002943 | psnr: 20.22, ms-ssim: 0.8691
+
+step 71000 | discriminator accuracy | train: 0.9338, test: 0.5326
+step 71000 generator losses | train: 59.37, val: 46.24 | content: 8.903, color: 681.8, texture: -47.31, tv: 0.002725 | psnr: 20.45, ms-ssim: 0.8719
+
+step 72000 | discriminator accuracy | train: 0.9348, test: 0.5389
+step 72000 generator losses | train: 57.02, val: 49.02 | content: 8.866, color: 687.5, texture: -44.37, tv: 0.002892 | psnr: 20.37, ms-ssim: 0.867
+
+step 73000 | discriminator accuracy | train: 0.9358, test: 0.5436
+step 73000 generator losses | train: 56.2, val: 47.88 | content: 8.863, color: 765.4, texture: -45.4, tv: 0.002931 | psnr: 20.09, ms-ssim: 0.8651
+
+step 74000 | discriminator accuracy | train: 0.9458, test: 0.5436
+step 74000 generator losses | train: 60.05, val: 48.27 | content: 8.891, color: 670.8, texture: -45.23, tv: 0.003183 | psnr: 20.38, ms-ssim: 0.8693
+
+step 75000 | discriminator accuracy | train: 0.9453, test: 0.5226
+step 75000 generator losses | train: 56.73, val: 44.37 | content: 8.868, color: 683.5, texture: -48.73, tv: 0.002844 | psnr: 20.41, ms-ssim: 0.8709
+
+step 76000 | discriminator accuracy | train: 0.9486, test: 0.5352
+step 76000 generator losses | train: 56.59, val: 43.39 | content: 8.926, color: 738.9, texture: -50.62, tv: 0.003416 | psnr: 20.08, ms-ssim: 0.8652
+
+step 77000 | discriminator accuracy | train: 0.948, test: 0.5299
+step 77000 generator losses | train: 55.95, val: 42.99 | content: 8.922, color: 678.2, texture: -50.86, tv: 0.003215 | psnr: 20.36, ms-ssim: 0.8677
+
+step 78000 | discriminator accuracy | train: 0.952, test: 0.5362
+step 78000 generator losses | train: 58.05, val: 45.87 | content: 9.043, color: 710.6, texture: -49.59, tv: 0.003025 | psnr: 20.24, ms-ssim: 0.8659
+
+step 79000 | discriminator accuracy | train: 0.951, test: 0.5242
+step 79000 generator losses | train: 56.62, val: 46.8 | content: 8.992, color: 690.1, texture: -47.89, tv: 0.003407 | psnr: 20.28, ms-ssim: 0.8673
+
+step 80000 | discriminator accuracy | train: 0.9504, test: 0.5509
+step 80000 generator losses | train: 52.98, val: 42.7 | content: 8.718, color: 677.7, texture: -49.01, tv: 0.002826 | psnr: 20.44, ms-ssim: 0.8707
+

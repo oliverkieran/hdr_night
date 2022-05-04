@@ -1,0 +1,30 @@
+step 21000 | discriminator accuracy | train: 0.7072, test: 0.6528
+step 21000 generator losses | train: 198, val: 165.8 | content: 8.867, color: 2004, texture: -17.31, tv: 0.0008797 | psnr: 16.52, ms-ssim: 0.8492
+
+step 22000 | discriminator accuracy | train: 0.6151, test: 0.5909
+step 22000 generator losses | train: 161.6, val: 151.3 | content: 8.301, color: 771, texture: -18.75, tv: 0.001132 | psnr: 20.25, ms-ssim: 0.8789
+
+step 23000 | discriminator accuracy | train: 0.5971, test: 0.5336
+step 23000 generator losses | train: 145.9, val: 141.1 | content: 7.83, color: 650.5, texture: -19.48, tv: 0.001224 | psnr: 20.9, ms-ssim: 0.8854
+
+step 24000 | discriminator accuracy | train: 0.6222, test: 0.5058
+step 24000 generator losses | train: 138.5, val: 138.2 | content: 7.834, color: 600.1, texture: -22.18, tv: 0.001534 | psnr: 21.25, ms-ssim: 0.8911
+
+step 25000 | discriminator accuracy | train: 0.667, test: 0.4795
+step 25000 generator losses | train: 132.1, val: 135.8 | content: 7.873, color: 593.9, texture: -25.45, tv: 0.001809 | psnr: 21.22, ms-ssim: 0.8899
+
+step 26000 | discriminator accuracy | train: 0.7274, test: 0.5142
+step 26000 generator losses | train: 135.3, val: 131.7 | content: 7.769, color: 604.5, texture: -27.61, tv: 0.001764 | psnr: 21.14, ms-ssim: 0.8885
+
+step 27000 | discriminator accuracy | train: 0.7754, test: 0.5032
+step 27000 generator losses | train: 133.4, val: 124 | content: 7.769, color: 584, texture: -35.19, tv: 0.00207 | psnr: 21.25, ms-ssim: 0.8897
+
+step 28000 | discriminator accuracy | train: 0.8038, test: 0.5173
+step 28000 generator losses | train: 127.4, val: 122.8 | content: 7.633, color: 566.7, texture: -33.73, tv: 0.00215 | psnr: 21.31, ms-ssim: 0.8903
+
+step 29000 | discriminator accuracy | train: 0.8192, test: 0.5242
+step 29000 generator losses | train: 128.7, val: 122 | content: 7.608, color: 565.3, texture: -34.18, tv: 0.002096 | psnr: 21.29, ms-ssim: 0.8895
+
+step 30000 | discriminator accuracy | train: 0.8363, test: 0.5394
+step 30000 generator losses | train: 128.3, val: 119.3 | content: 7.399, color: 551.9, texture: -32.46, tv: 0.001873 | psnr: 21.43, ms-ssim: 0.8947
+
