@@ -18,11 +18,11 @@ This repository provides the code belonging to the paper "Deep Learning for Smar
 
 ---
 ### 3. Folder Structure
->```DPED/```                &nbsp; - &nbsp; directory with the DPED code used for training on the daytime dataset<br/>
->```DPED2/```               &nbsp; - &nbsp; directory with the attempted Tensorflow 2 translation of the DPED code<br/>
->```DPED_night/```          &nbsp; - &nbsp; directory with the DPED code used for training on the SKOL dataset<br/>
->```learned_isp/```         &nbsp; - &nbsp; directory with the PUNET code used for training on the daytime dataset<br/>
->```learned_isp_night/```   &nbsp; - &nbsp; directory with the DPED code used for training on the SKOL dataset<br/>
+>```DPED/```                &nbsp; - &nbsp; directory with the DPED code used for training on the daytime dataset (Oliver Lehmann)<br/>
+>```DPED2/```               &nbsp; - &nbsp; directory with the attempted Tensorflow 2 translation of the DPED code (Oliver Lehmann)<br/>
+>```DPED_night/```          &nbsp; - &nbsp; directory with the DPED code used for training on the SKOL dataset (Oliver Lehmann)<br/>
+>```learned_isp/```         &nbsp; - &nbsp; directory with the PUNET code used for training on the daytime dataset (Samuel Käser & Oliver Lehmann)<br/>
+>```learned_isp_night/```   &nbsp; - &nbsp; directory with the PUNET code used for training on the SKOL dataset (Samuel Käser)<br/>
 >```raw_images/```          &nbsp; - &nbsp; directory where we stored the daytime dataset<br/>
 >```../crops/```            &nbsp; - &nbsp; directory where we stored the crops of the SKOL dataset<br/>
 >```../dataset_raw/```      &nbsp; - &nbsp; directory where we stored the full-resolution images of the SKOL dataset<br/>
