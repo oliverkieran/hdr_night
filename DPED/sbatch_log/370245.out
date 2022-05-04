@@ -1,0 +1,43 @@
+WARNING:tensorflow:From evaluate_scores.py:21: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-06-02 16:24:19.073293: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-02 16:24:19.159575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp COLLECTORS EDITION major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:87:00.0
+2021-06-02 16:24:19.163465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:24:19.169529: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-02 16:24:19.174036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-02 16:24:19.177779: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-02 16:24:19.184096: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-02 16:24:19.188738: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-02 16:24:19.196465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-02 16:24:19.206807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-02 16:24:19.208460: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-02 16:24:19.236506: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399995000 Hz
+2021-06-02 16:24:19.239103: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f0341addb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-02 16:24:19.241012: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-02 16:24:19.246177: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp COLLECTORS EDITION major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:87:00.0
+2021-06-02 16:24:19.247585: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:24:19.248750: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-02 16:24:19.249843: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-02 16:24:19.251081: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-02 16:24:19.252131: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-02 16:24:19.253304: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-02 16:24:19.254609: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-02 16:24:19.265265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-02 16:24:19.267707: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:24:19.452506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-02 16:24:19.453570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-02 16:24:19.454932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-02 16:24:19.467174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11437 MB memory) -> physical GPU (device: 0, name: TITAN Xp COLLECTORS EDITION, pci bus id: 0000:87:00.0, compute capability: 6.1)
+2021-06-02 16:24:19.471913: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f034fc4d70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-02 16:24:19.473132: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN Xp COLLECTORS EDITION, Compute Capability 6.1
+Loading test data...
+Traceback (most recent call last):
+  File "evaluate_scores.py", line 47, in <module>
+    test_data, test_answ = load_test_data(phone_dir, dslr_dir, PATCH_WIDTH, PATCH_HEIGHT, 1000, 2.0)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/DPED/load_dataset_raw.py", line 27, in load_test_data
+    test_directory_dslr = dataset_dir + 'test/fujifilm/'
+NameError: name 'dataset_dir' is not defined

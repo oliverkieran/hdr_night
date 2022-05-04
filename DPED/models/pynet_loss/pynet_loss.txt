@@ -1,0 +1,3 @@
+step 31000 | discriminator accuracy | train: 0.98, test: 0.9632
+step 31000 generator losses | train: 523.3, val: 516 | content: 8.639, color: 3663, texture: -3.357, tv: 0.001229 | psnr: 13.79, ms-ssim: 0.8332
+

@@ -1,0 +1,181 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+
+The following parameters will be applied for CNN training:
+
+Phone model: mediatek
+Batch size: 32
+Learning rate: 0.0005
+Training iterations: 50000
+
+Content loss: 1
+Color loss: 0.1
+Texture loss: 0.4
+Total variation loss: 400
+
+Path to DPED dataset: ../raw_images/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Evaluation step: 1000
+Run Id: default
+
+2021-06-01 11:06:39.619360: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-01 11:06:39.727573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:84:00.0
+2021-06-01 11:06:39.730067: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-01 11:06:39.733686: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-01 11:06:39.747386: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-01 11:06:39.749958: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-01 11:06:39.754329: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-01 11:06:39.758205: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-01 11:06:39.765781: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-01 11:06:39.775052: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-01 11:06:39.776378: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-01 11:06:39.809177: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2500180000 Hz
+2021-06-01 11:06:39.810548: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5601acde31a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-01 11:06:39.811572: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-01 11:06:39.817301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:84:00.0
+2021-06-01 11:06:39.818364: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-01 11:06:39.819380: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-01 11:06:39.820422: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-01 11:06:39.821524: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-01 11:06:39.822559: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-01 11:06:39.823557: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-01 11:06:39.824645: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-01 11:06:39.839486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-01 11:06:39.840610: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-01 11:06:40.030190: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-01 11:06:40.031262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-01 11:06:40.032190: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-01 11:06:40.040877: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11446 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-01 11:06:40.045577: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5601ae07fb60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-01 11:06:40.046578: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN X (Pascal), Compute Capability 6.1
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/DPED/vgg.py:49: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From train_model.py:85: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Initializing variables
+Loading validation data...
+Validation data was loaded
+
+Loading training data...
+Training data was loaded
+
+Training network
+2021-06-01 11:22:54.377928: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-01 11:22:55.645401: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-01 11:22:55.740344: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-01 11:22:57.162616: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-01 11:22:58.042122: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-01 11:22:58.113123: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-01 11:22:58.196957: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-01 11:22:59.077476: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+step 0 generator losses | train: 0.7791, val: 654.8 | content: 12.04, color: 6427, tv: 4.045e-05 | psnr: 11.22, ms-ssim: 0.4516
+
+step 1000 generator losses | train: 97.76, val: 78.66 | content: 12.01, color: 664.9, tv: 0.000409 | psnr: 19.48, ms-ssim: 0.8441
+
+step 2000 generator losses | train: 68.76, val: 60.1 | content: 11.41, color: 484.9, tv: 0.0005004 | psnr: 20.54, ms-ssim: 0.8696
+
+step 3000 generator losses | train: 65.89, val: 60.6 | content: 10.69, color: 496.9, tv: 0.0005537 | psnr: 20.78, ms-ssim: 0.8835
+
+step 4000 generator losses | train: 60.65, val: 59.52 | content: 9.933, color: 493, tv: 0.0007031 | psnr: 20.96, ms-ssim: 0.8924
+
+step 5000 generator losses | train: 58.46, val: 54.56 | content: 9.378, color: 449, tv: 0.0007211 | psnr: 21.33, ms-ssim: 0.9017
+
+step 6000 generator losses | train: 58.46, val: 54.34 | content: 8.961, color: 450.7, tv: 0.0007749 | psnr: 21.35, ms-ssim: 0.9051
+
+step 7000 generator losses | train: 54.5, val: 54.8 | content: 8.806, color: 456.6, tv: 0.0008458 | psnr: 21.38, ms-ssim: 0.9092
+
+step 8000 generator losses | train: 53.95, val: 52.64 | content: 8.253, color: 440.6, tv: 0.0008202 | psnr: 21.54, ms-ssim: 0.9109
+
+step 9000 generator losses | train: 52.38, val: 57.94 | content: 8.067, color: 495.4, tv: 0.0008331 | psnr: 21.34, ms-ssim: 0.9113
+
+step 10000 generator losses | train: 51.74, val: 52.22 | content: 7.662, color: 441.5, tv: 0.001011 | psnr: 21.64, ms-ssim: 0.9184
+
+step 11000 generator losses | train: 51.29, val: 55.07 | content: 7.603, color: 470.6, tv: 0.001019 | psnr: 21.41, ms-ssim: 0.9168
+
+step 12000 generator losses | train: 47.95, val: 52.72 | content: 7.425, color: 448.6, tv: 0.001078 | psnr: 21.61, ms-ssim: 0.9185
+
+step 13000 generator losses | train: 49.07, val: 51.51 | content: 7.264, color: 437.9, tv: 0.001129 | psnr: 21.81, ms-ssim: 0.9223
+
+step 14000 generator losses | train: 49.95, val: 58.76 | content: 7.257, color: 510, tv: 0.001239 | psnr: 21.44, ms-ssim: 0.9219
+
+step 15000 generator losses | train: 46.4, val: 54.87 | content: 7.32, color: 471.7, tv: 0.0009422 | psnr: 21.55, ms-ssim: 0.9156
+
+step 16000 generator losses | train: 46.17, val: 50.97 | content: 7.163, color: 433.4, tv: 0.001174 | psnr: 21.82, ms-ssim: 0.9221
+
+step 17000 generator losses | train: 45.03, val: 54.34 | content: 6.993, color: 468.8, tv: 0.001162 | psnr: 21.64, ms-ssim: 0.9208
+
+step 18000 generator losses | train: 43.81, val: 50.67 | content: 6.927, color: 432.2, tv: 0.00131 | psnr: 21.87, ms-ssim: 0.9227
+
+step 19000 generator losses | train: 43.13, val: 53.3 | content: 6.905, color: 458.5, tv: 0.001356 | psnr: 21.71, ms-ssim: 0.9242
+
+step 20000 generator losses | train: 43.92, val: 51.17 | content: 6.778, color: 438.6, tv: 0.001329 | psnr: 21.81, ms-ssim: 0.9234
+
+step 21000 generator losses | train: 42.36, val: 54.68 | content: 6.74, color: 474.1, tv: 0.001317 | psnr: 21.67, ms-ssim: 0.925
+
+step 22000 generator losses | train: 42.21, val: 51.55 | content: 6.605, color: 444.4, tv: 0.001246 | psnr: 21.85, ms-ssim: 0.9259
+
+step 23000 generator losses | train: 41.7, val: 52.2 | content: 6.694, color: 450.2, tv: 0.001227 | psnr: 21.7, ms-ssim: 0.9218
+
+step 24000 generator losses | train: 40.59, val: 52.13 | content: 6.552, color: 450.6, tv: 0.001285 | psnr: 21.74, ms-ssim: 0.9244
+
+step 25000 generator losses | train: 38.63, val: 53.36 | content: 6.533, color: 463, tv: 0.001312 | psnr: 21.65, ms-ssim: 0.9246
+
+step 26000 generator losses | train: 38.32, val: 55.3 | content: 6.426, color: 483.3, tv: 0.001349 | psnr: 21.62, ms-ssim: 0.9237
+
+step 27000 generator losses | train: 37.67, val: 53.49 | content: 6.324, color: 466.3, tv: 0.001334 | psnr: 21.75, ms-ssim: 0.9245
+
+step 28000 generator losses | train: 37.61, val: 53.26 | content: 6.405, color: 463.1, tv: 0.001376 | psnr: 21.74, ms-ssim: 0.9241
+
+step 29000 generator losses | train: 36.8, val: 50.71 | content: 6.265, color: 439.2, tv: 0.001313 | psnr: 21.88, ms-ssim: 0.9246
+
+step 30000 generator losses | train: 37.08, val: 50.55 | content: 6.381, color: 436.9, tv: 0.001202 | psnr: 21.84, ms-ssim: 0.9238
+
+step 31000 generator losses | train: 36.04, val: 53.05 | content: 6.258, color: 462.2, tv: 0.00145 | psnr: 21.75, ms-ssim: 0.9267
+
+step 32000 generator losses | train: 34.55, val: 62.97 | content: 6.334, color: 560.4, tv: 0.001476 | psnr: 21.27, ms-ssim: 0.9249
+
+step 33000 generator losses | train: 35.33, val: 51.15 | content: 6.155, color: 444.2, tv: 0.001424 | psnr: 21.86, ms-ssim: 0.927
+
+step 34000 generator losses | train: 34.87, val: 57.26 | content: 6.173, color: 505.3, tv: 0.0014 | psnr: 21.53, ms-ssim: 0.9253
+
+step 35000 generator losses | train: 34.54, val: 55.44 | content: 6.172, color: 487, tv: 0.001409 | psnr: 21.6, ms-ssim: 0.9261
+
+step 36000 generator losses | train: 33.58, val: 52.15 | content: 6.141, color: 454.7, tv: 0.001332 | psnr: 21.78, ms-ssim: 0.926
+
+step 37000 generator losses | train: 31.88, val: 60.71 | content: 6.173, color: 539.4, tv: 0.001489 | psnr: 21.31, ms-ssim: 0.9264
+
+step 38000 generator losses | train: 33.13, val: 56.3 | content: 6.176, color: 495.9, tv: 0.001334 | psnr: 21.54, ms-ssim: 0.9246
+
+step 39000 generator losses | train: 32.1, val: 54.46 | content: 6.106, color: 478.1, tv: 0.001373 | psnr: 21.69, ms-ssim: 0.9259
+
+step 40000 generator losses | train: 31.38, val: 53.38 | content: 6.001, color: 468.1, tv: 0.001427 | psnr: 21.74, ms-ssim: 0.9277
+
+step 41000 generator losses | train: 31.55, val: 53.07 | content: 5.913, color: 465.8, tv: 0.001449 | psnr: 21.77, ms-ssim: 0.9272
+
+step 42000 generator losses | train: 30.58, val: 53.59 | content: 5.981, color: 470.4, tv: 0.001413 | psnr: 21.73, ms-ssim: 0.9274
+
+step 43000 generator losses | train: 30.15, val: 54.38 | content: 5.795, color: 479.7, tv: 0.001523 | psnr: 21.74, ms-ssim: 0.9287
+
+step 44000 generator losses | train: 28.92, val: 57.49 | content: 5.848, color: 510.5, tv: 0.001472 | psnr: 21.51, ms-ssim: 0.9271
+
+step 45000 generator losses | train: 29.94, val: 56.89 | content: 5.87, color: 504.5, tv: 0.001425 | psnr: 21.56, ms-ssim: 0.9257
+
+step 46000 generator losses | train: 29.76, val: 54.37 | content: 5.819, color: 479.6, tv: 0.001462 | psnr: 21.63, ms-ssim: 0.9282
+
+step 47000 generator losses | train: 29.86, val: 56.73 | content: 5.741, color: 503.3, tv: 0.001635 | psnr: 21.59, ms-ssim: 0.9307
+
+step 48000 generator losses | train: 28.32, val: 53.81 | content: 5.719, color: 475, tv: 0.001486 | psnr: 21.69, ms-ssim: 0.9289
+
+step 49000 generator losses | train: 28.55, val: 53.59 | content: 5.687, color: 472.9, tv: 0.001515 | psnr: 21.73, ms-ssim: 0.929
+
+step 50000 generator losses | train: 28.14, val: 56.59 | content: 5.733, color: 502.8, tv: 0.00145 | psnr: 21.5, ms-ssim: 0.9263
+

@@ -1,0 +1,81 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+
+The following parameters will be applied for CNN training:
+
+Phone model: mediatek
+Batch size: 32
+Learning rate: 0.0005
+Training iterations: 50000
+
+Content loss: 10
+Color loss: 0.5
+Texture loss: 1
+Total variation loss: 2000
+
+Path to DPED dataset: ../raw_images/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Evaluation step: 1000
+
+2021-05-21 15:16:36.073596: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-21 15:16:36.111146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:86:00.0
+2021-05-21 15:16:36.113838: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-21 15:16:36.117382: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-21 15:16:36.120800: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-21 15:16:36.123291: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-21 15:16:36.127025: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-21 15:16:36.130244: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-21 15:16:36.135944: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-21 15:16:36.140482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-21 15:16:36.142010: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2021-05-21 15:16:36.165899: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499925000 Hz
+2021-05-21 15:16:36.167707: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564d02cf10b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-21 15:16:36.168749: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-21 15:16:36.172059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:86:00.0
+2021-05-21 15:16:36.173022: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-21 15:16:36.173856: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-21 15:16:36.174657: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-21 15:16:36.175439: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-21 15:16:36.176286: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-21 15:16:36.177061: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-21 15:16:36.177874: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-21 15:16:36.182106: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-21 15:16:36.183001: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-21 15:16:36.265817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-21 15:16:36.266750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-05-21 15:16:36.267540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-05-21 15:16:36.272954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11497 MB memory) -> physical GPU (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:86:00.0, compute capability: 5.2)
+2021-05-21 15:16:36.276236: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564d0391e7a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-21 15:16:36.277297: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX TITAN X, Compute Capability 5.2
+Traceback (most recent call last):
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/eager/execute.py", line 206, in make_shape
+    shape = tensor_shape.as_shape(v)
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_shape.py", line 1216, in as_shape
+    return TensorShape(shape)
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_shape.py", line 776, in __init__
+    self._dims = [as_dimension(d) for d in dims_iter]
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_shape.py", line 776, in <listcomp>
+    self._dims = [as_dimension(d) for d in dims_iter]
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_shape.py", line 718, in as_dimension
+    return Dimension(value)
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_shape.py", line 198, in __init__
+    raise ValueError("Dimension %d must be >= 0" % self._value)
+ValueError: Dimension -1 must be >= 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train_model.py", line 41, in <module>
+    phone_image = tf.compat.v1.placeholder(tf.float32, [-1, PATCH_HEIGHT, PATCH_WIDTH, 4])
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/ops/array_ops.py", line 2619, in placeholder
+    return gen_array_ops.placeholder(dtype=dtype, shape=shape, name=name)
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/ops/gen_array_ops.py", line 6667, in placeholder
+    shape = _execute.make_shape(shape, "shape")
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/eager/execute.py", line 211, in make_shape
+    e))
+ValueError: Error converting shape to a TensorShape: Dimension -1 must be >= 0.

@@ -1,0 +1,48 @@
+WARNING:tensorflow:From evaluate_scores.py:21: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-06-02 16:30:25.578131: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-02 16:30:25.741748: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:04:00.0
+2021-06-02 16:30:25.751900: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:30:26.040836: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-02 16:30:26.293082: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-02 16:30:26.945295: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-02 16:30:27.343157: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-02 16:30:27.587758: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-02 16:30:28.243490: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-02 16:30:28.288379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-02 16:30:28.309872: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-02 16:30:28.342347: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100040000 Hz
+2021-06-02 16:30:28.345981: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5572b3659ed0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-02 16:30:28.347256: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-02 16:30:28.364149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:04:00.0
+2021-06-02 16:30:28.365324: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:30:28.366554: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-02 16:30:28.367785: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-02 16:30:28.369010: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-02 16:30:28.370164: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-02 16:30:28.371322: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-02 16:30:28.372721: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-02 16:30:28.385012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-02 16:30:28.386448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:30:28.709026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-02 16:30:28.710359: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-02 16:30:28.711617: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-02 16:30:28.726586: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10479 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2021-06-02 16:30:28.730608: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5572b4486130 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-02 16:30:28.731836: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+Loading test data...
+Traceback (most recent call last):
+  File "evaluate_scores.py", line 47, in <module>
+    test_data, test_answ = load_test_data(phone_dir, dslr_dir, PATCH_WIDTH, PATCH_HEIGHT, 1000, 2.0)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/DPED/load_dataset_raw.py", line 44, in load_test_data
+    I = np.float16(np.reshape(I, [1, int(PATCH_WIDTH * DSLR_SCALE), int(PATCH_HEIGHT * DSLR_SCALE), 3])) / 255
+  File "<__array_function__ internals>", line 6, in reshape
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 299, in reshape
+    return _wrapfunc(a, 'reshape', newshape, order=order)
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 58, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: cannot reshape array of size 262144 into shape (1,256,256,3)

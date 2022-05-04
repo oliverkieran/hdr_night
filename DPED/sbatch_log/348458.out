@@ -1,0 +1,4 @@
+  File "test_model.py", line 45
+    test_dir = dped_dir + "test/test_images/""
+                                             ^
+SyntaxError: EOL while scanning string literal

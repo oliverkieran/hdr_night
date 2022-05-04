@@ -1,0 +1,73 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-05-25 09:08:39.225880: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-25 09:08:39.329954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:84:00.0
+2021-05-25 09:08:39.332654: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-25 09:08:39.345755: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-25 09:08:39.352611: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-25 09:08:39.358933: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-25 09:08:39.369461: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-25 09:08:39.395165: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-25 09:08:39.409849: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-25 09:08:39.427063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-25 09:08:39.441294: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-05-25 09:08:39.473223: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2500180000 Hz
+2021-05-25 09:08:39.500642: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555829440260 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-25 09:08:39.536437: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-25 09:08:39.560995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:84:00.0
+2021-05-25 09:08:39.575639: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-25 09:08:39.590766: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-25 09:08:39.629930: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-25 09:08:39.641935: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-25 09:08:39.653571: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-25 09:08:39.673580: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-25 09:08:39.688487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-25 09:08:39.721038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-25 09:08:39.731862: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-25 09:08:39.895929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-25 09:08:39.903311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-05-25 09:08:39.909904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-05-25 09:08:39.923190: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11446 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-05-25 09:08:39.927612: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55582a385f60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-25 09:08:39.946061: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN X (Pascal), Compute Capability 6.1
+iteration 49000, processing image 3331.png
+2021-05-25 09:08:46.413769: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-25 09:08:53.356405: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-05-25 09:08:53.658525: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.019981563091278076, 1.0460546016693115]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 373.png
+Lossy conversion from float32 to uint8. Range [-0.05946999788284302, 0.9986851811408997]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2581.png
+Lossy conversion from float32 to uint8. Range [-0.03150331974029541, 1.0288026332855225]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 4017.png
+Lossy conversion from float32 to uint8. Range [-0.044175148010253906, 1.0429606437683105]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.06666791439056396, 1.0774662494659424]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3848.png
+Lossy conversion from float32 to uint8. Range [-0.04850602149963379, 1.0383753776550293]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.037052273750305176, 1.0794793367385864]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3664.png
+Lossy conversion from float32 to uint8. Range [-0.02358388900756836, 1.0511950254440308]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.060114502906799316, 1.0175117254257202]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 4081.png
+Lossy conversion from float32 to uint8. Range [-0.03400510549545288, 1.0094201564788818]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 4341.png
+Lossy conversion from float32 to uint8. Range [-0.023201942443847656, 1.0517029762268066]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2808.png
+Lossy conversion from float32 to uint8. Range [-0.035995662212371826, 0.9903048276901245]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 5273.png
+Lossy conversion from float32 to uint8. Range [-0.04466444253921509, 1.0409197807312012]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.03171980381011963, 1.0466433763504028]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.030166208744049072, 1.0477075576782227]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 649.png
+Lossy conversion from float32 to uint8. Range [-0.07150328159332275, 1.0604662895202637]. Convert image to uint8 prior to saving to suppress this warning.

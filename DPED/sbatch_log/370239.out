@@ -1,0 +1,50 @@
+WARNING:tensorflow:From evaluate_scores.py:21: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-06-02 16:19:21.821751: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-02 16:19:21.902062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp COLLECTORS EDITION major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:87:00.0
+2021-06-02 16:19:21.959045: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:19:22.243541: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-02 16:19:22.643590: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-02 16:19:23.651077: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-02 16:19:24.472716: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-02 16:19:24.834315: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-02 16:19:25.450718: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-02 16:19:25.471877: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-02 16:19:25.473500: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-02 16:19:25.500495: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399995000 Hz
+2021-06-02 16:19:25.503109: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e044c7ccb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-02 16:19:25.504414: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-02 16:19:25.511055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp COLLECTORS EDITION major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:87:00.0
+2021-06-02 16:19:25.512324: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:19:25.513485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-02 16:19:25.515618: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-02 16:19:25.516935: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-02 16:19:25.518131: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-02 16:19:25.519560: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-02 16:19:25.520798: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-02 16:19:25.532554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-02 16:19:25.533732: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-02 16:19:25.699471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-02 16:19:25.700576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-02 16:19:25.701849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-02 16:19:25.710493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11437 MB memory) -> physical GPU (device: 0, name: TITAN Xp COLLECTORS EDITION, pci bus id: 0000:87:00.0, compute capability: 6.1)
+2021-06-02 16:19:25.715722: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e045a7cdd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-02 16:19:25.717080: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN Xp COLLECTORS EDITION, Compute Capability 6.1
+WARNING:tensorflow:From evaluate_scores.py:42: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+Traceback (most recent call last):
+  File "evaluate_scores.py", line 46, in <module>
+    saver.restore(sess, "models/original/pynet_level_0.ckpt")
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py", line 1280, in restore
+    if not checkpoint_management.checkpoint_exists_internal(checkpoint_prefix):
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/training/checkpoint_management.py", line 366, in checkpoint_exists_internal
+    if file_io.get_matching_files(pathname):
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/lib/io/file_io.py", line 363, in get_matching_files
+    return get_matching_files_v2(filename)
+  File "/itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/lib/io/file_io.py", line 384, in get_matching_files_v2
+    compat.as_bytes(pattern))
+tensorflow.python.framework.errors_impl.NotFoundError: models/original; No such file or directory

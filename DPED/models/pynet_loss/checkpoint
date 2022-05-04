@@ -1,0 +1,2 @@
+model_checkpoint_path: "iteration_31000.ckpt"
+all_model_checkpoint_paths: "iteration_31000.ckpt"

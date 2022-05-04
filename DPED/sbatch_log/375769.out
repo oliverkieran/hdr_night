@@ -1,0 +1,531 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 12:58:39.142774: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 12:58:39.209894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 12:58:39.264125: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 12:58:39.515575: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 12:58:40.277097: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 12:58:41.011219: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 12:58:41.402816: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 12:58:41.808082: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 12:58:42.468877: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 12:58:42.476923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 12:58:42.478228: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 12:58:42.504628: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 12:58:42.505899: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5624ba245ec0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 12:58:42.506675: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 12:58:42.510311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 12:58:42.511114: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 12:58:42.511869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 12:58:42.512780: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 12:58:42.513556: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 12:58:42.514282: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 12:58:42.515064: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 12:58:42.515750: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 12:58:42.522829: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 12:58:42.523586: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 12:58:42.668717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 12:58:42.669569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 12:58:42.670328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 12:58:42.676995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 12:58:42.681650: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5624bdce5d80 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 12:58:42.682599: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 12:59:03.507871: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 12:59:11.628783: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 12:59:12.061792: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.05084335803985596, 1.036689281463623]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.061441004276275635, 1.0784684419631958]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.03849828243255615, 1.070751667022705]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.059542059898376465, 1.0487942695617676]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.05725950002670288, 1.0361998081207275]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.030621826648712158, 1.053321361541748]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:00:54.126206: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:00:54.191888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:00:54.193748: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:00:54.197031: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:00:54.200223: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:00:54.201954: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:00:54.205115: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:00:54.208014: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:00:54.214288: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:00:54.220932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:00:54.222100: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:00:54.252651: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:00:54.253964: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563498790af0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:00:54.254738: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:00:54.258871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:00:54.259890: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:00:54.260888: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:00:54.261751: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:00:54.262649: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:00:54.263591: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:00:54.264575: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:00:54.265410: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:00:54.271960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:00:54.272896: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:00:54.418703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:00:54.419697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:00:54.420555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:00:54.427248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:00:54.432012: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56349976eb40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:00:54.432816: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:00:59.258042: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:01:00.773100: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:01:01.186682: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.05821025371551514, 1.055769681930542]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.06573015451431274, 1.079634666442871]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.05482137203216553, 1.0741733312606812]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.06439316272735596, 1.064629316329956]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.05296450853347778, 1.065444827079773]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.04760390520095825, 1.0711013078689575]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:02:41.049227: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:02:41.113479: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:02:41.114851: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:02:41.117525: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:02:41.119861: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:02:41.121377: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:02:41.124249: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:02:41.126920: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:02:41.132042: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:02:41.137021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:02:41.138115: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:02:41.164688: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:02:41.166195: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562803bdb220 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:02:41.167017: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:02:41.171758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:02:41.172551: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:02:41.173343: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:02:41.174118: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:02:41.174854: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:02:41.175601: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:02:41.176355: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:02:41.177541: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:02:41.185301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:02:41.186407: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:02:41.330820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:02:41.331588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:02:41.332441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:02:41.338998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:02:41.343337: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562804c4b0c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:02:41.344165: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:02:43.562509: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:02:45.127619: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:02:45.535320: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.06810414791107178, 1.0581477880477905]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.06908446550369263, 1.0793731212615967]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.059417903423309326, 1.0752909183502197]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.07070338726043701, 1.0676631927490234]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.06278771162033081, 1.0609233379364014]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.05329185724258423, 1.0685296058654785]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:04:14.970707: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:04:15.036040: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:04:15.037480: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:04:15.040076: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:04:15.042449: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:04:15.043962: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:04:15.046779: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:04:15.049312: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:04:15.054471: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:04:15.059245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:04:15.060315: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:04:15.084641: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:04:15.086674: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5588eca2bbe0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:04:15.087504: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:04:15.091095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:04:15.092046: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:04:15.092831: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:04:15.093560: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:04:15.094312: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:04:15.095039: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:04:15.095755: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:04:15.096521: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:04:15.102415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:04:15.103198: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:04:15.249707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:04:15.250691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:04:15.251431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:04:15.258092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:04:15.261273: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5588edb136f0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:04:15.262839: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:04:19.720202: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:04:21.281322: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:04:21.732487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.0631895661354065, 1.0616378784179688]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.07156920433044434, 1.0794695615768433]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.06173616647720337, 1.0667732954025269]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.07093286514282227, 1.0630466938018799]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.058907270431518555, 1.0653674602508545]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.055467307567596436, 1.0674633979797363]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:05:58.038215: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:05:58.106293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:05:58.109933: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:05:58.112803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:05:58.115427: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:05:58.117133: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:05:58.119956: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:05:58.122456: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:05:58.128216: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:05:58.133921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:05:58.135226: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:05:58.160673: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:05:58.162222: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x561c89eff640 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:05:58.163020: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:05:58.166601: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:05:58.167747: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:05:58.168487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:05:58.169224: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:05:58.169958: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:05:58.170712: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:05:58.171581: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:05:58.172376: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:05:58.178584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:05:58.179396: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:05:58.322307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:05:58.323213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:05:58.324013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:05:58.330699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:05:58.333862: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x561c8afc5480 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:05:58.334847: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:06:02.209094: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:06:03.803422: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:06:04.239813: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.06377458572387695, 1.0604372024536133]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.0687904953956604, 1.0795812606811523]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.060369908809661865, 1.0665725469589233]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.06892889738082886, 1.0639805793762207]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.05301499366760254, 1.0616087913513184]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.05203711986541748, 1.0634963512420654]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:07:23.688811: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:07:23.754088: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:07:23.755763: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:07:23.759117: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:07:23.761521: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:07:23.763460: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:07:23.766649: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:07:23.769352: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:07:23.776402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:07:23.781759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:07:23.782994: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:07:23.808725: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:07:23.810594: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55edbd902990 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:07:23.811483: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:07:23.815376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:07:23.816186: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:07:23.817032: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:07:23.817720: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:07:23.819064: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:07:23.819985: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:07:23.820964: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:07:23.821710: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:07:23.828819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:07:23.830074: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:07:23.975940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:07:23.976896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:07:23.977635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:07:23.984569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:07:23.988131: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55edbea417b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:07:23.989081: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:07:26.060924: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:07:27.596969: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:07:28.045955: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.06248360872268677, 1.0596296787261963]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.0768207311630249, 1.079723596572876]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.06492173671722412, 1.0710991621017456]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.07117551565170288, 1.0623244047164917]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.059338271617889404, 1.0683422088623047]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.05751067399978638, 1.0704563856124878]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:08:48.740922: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:08:48.805340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:08:48.806667: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:08:48.809266: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:08:48.811617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:08:48.813010: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:08:48.815889: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:08:48.818384: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:08:48.823790: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:08:48.828800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:08:48.829853: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:08:48.860668: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:08:48.861971: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5654c1a0a500 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:08:48.862880: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:08:48.867800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:08:48.868617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:08:48.869450: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:08:48.870238: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:08:48.871127: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:08:48.872090: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:08:48.872912: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:08:48.873824: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:08:48.879826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:08:48.880629: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:08:49.032134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:08:49.033222: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:08:49.034251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:08:49.041072: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:08:49.046137: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5654c2a1b500 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:08:49.047275: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:08:53.800268: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:08:55.348273: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:08:55.763263: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.06131458282470703, 1.0557372570037842]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.06911206245422363, 1.0792746543884277]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.06252396106719971, 1.0549705028533936]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.06881296634674072, 1.0548956394195557]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.053898513317108154, 1.0654464960098267]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.055844008922576904, 1.0668500661849976]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:10:12.463233: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:10:12.533753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:10:12.535207: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:10:12.537989: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:10:12.540505: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:10:12.542081: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:10:12.544951: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:10:12.547773: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:10:12.553279: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:10:12.558471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:10:12.559789: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:10:12.584691: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:10:12.586325: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e6eea2ef90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:10:12.587329: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:10:12.591130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:10:12.592061: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:10:12.592947: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:10:12.593863: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:10:12.594733: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:10:12.595551: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:10:12.596373: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:10:12.597363: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:10:12.604287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:10:12.605032: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:10:12.751442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:10:12.752342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:10:12.753301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:10:12.760216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:10:12.763489: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e6efa93250 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:10:12.764213: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:10:17.373716: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:10:18.944574: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:10:19.383767: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.07336974143981934, 1.054488182067871]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.07536464929580688, 1.0798122882843018]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.0668565034866333, 1.0739476680755615]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.07024681568145752, 1.0638659000396729]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.06279999017715454, 1.0571199655532837]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.05855560302734375, 1.0666017532348633]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:11:39.336350: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:11:39.401323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:11:39.402719: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:11:39.405261: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:11:39.407736: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:11:39.409151: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:11:39.411931: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:11:39.414451: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:11:39.420363: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:11:39.425742: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:11:39.426806: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:11:39.452580: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:11:39.453969: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5569cc7f5fc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:11:39.454862: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:11:39.460315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:11:39.461368: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:11:39.462252: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:11:39.463136: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:11:39.464048: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:11:39.464905: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:11:39.465749: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:11:39.466678: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:11:39.472571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:11:39.473370: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:11:39.616293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:11:39.617008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:11:39.617664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:11:39.624498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:11:39.627958: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5569cd859e70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:11:39.628831: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:11:43.182211: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:11:44.751852: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:11:45.174341: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.06913387775421143, 1.060844898223877]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.07360857725143433, 1.0795615911483765]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.06211817264556885, 1.0690923929214478]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.06863081455230713, 1.062225103378296]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.05677437782287598, 1.0636295080184937]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.05787217617034912, 1.0665851831436157]. Convert image to uint8 prior to saving to suppress this warning.
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-06-08 13:12:58.247869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-08 13:12:58.317107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:12:58.337516: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:12:58.345919: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:12:58.357895: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:12:58.368125: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:12:58.373667: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:12:58.377318: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:12:58.383589: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:12:58.389091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:12:58.396654: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-08 13:12:58.424632: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599830000 Hz
+2021-06-08 13:12:58.426443: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562bdfef8560 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:12:58.427899: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-08 13:12:58.432876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+2021-06-08 13:12:58.433738: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:12:58.434608: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-08 13:12:58.435425: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-08 13:12:58.436239: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-08 13:12:58.436993: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-08 13:12:58.438065: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-08 13:12:58.438906: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:12:58.445325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-08 13:12:58.446138: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-08 13:12:58.589750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-08 13:12:58.590763: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-08 13:12:58.591611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-08 13:12:58.598882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10283 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2021-06-08 13:12:58.602677: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562be0fa0e40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-08 13:12:58.603685: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+Processing image 373.png
+2021-06-08 13:13:00.876202: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-08 13:13:02.436341: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-08 13:13:02.855906: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.0649482011795044, 1.0514929294586182]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 4982.png
+Lossy conversion from float32 to uint8. Range [-0.07805901765823364, 1.0795977115631104]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 3558.png
+Lossy conversion from float32 to uint8. Range [-0.06120312213897705, 1.070932388305664]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 1813.png
+Lossy conversion from float32 to uint8. Range [-0.06797581911087036, 1.063542366027832]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5790.png
+Lossy conversion from float32 to uint8. Range [-0.0575861930847168, 1.0646579265594482]. Convert image to uint8 prior to saving to suppress this warning.
+Processing image 5393.png
+Lossy conversion from float32 to uint8. Range [-0.06027054786682129, 1.0573503971099854]. Convert image to uint8 prior to saving to suppress this warning.
+All done

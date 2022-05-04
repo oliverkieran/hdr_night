@@ -1,0 +1,120 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+
+The following parameters will be applied for CNN training:
+
+Phone model: mediatek
+Batch size: 32
+Learning rate: 0.0005
+Training iterations: 20000
+
+Content loss: 1
+Color loss: 0.1
+Texture loss: 0.4
+Total variation loss: 400
+
+Path to DPED dataset: ../raw_images/
+Path to VGG-19 network: vgg_pretrained/imagenet-vgg-verydeep-19.mat
+Evaluation step: 1000
+Run Id: train_size_10000
+
+2021-06-03 11:42:25.627893: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-03 11:42:25.748571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:84:00.0
+2021-06-03 11:42:25.753388: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-03 11:42:25.757454: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-03 11:42:25.761146: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-03 11:42:25.763614: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-03 11:42:25.767717: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-03 11:42:25.771604: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-03 11:42:25.778917: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-03 11:42:25.804038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-03 11:42:25.805554: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-06-03 11:42:25.838488: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100040000 Hz
+2021-06-03 11:42:25.843022: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5632cc07a3e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-03 11:42:25.844218: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-03 11:42:25.862710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:84:00.0
+2021-06-03 11:42:25.865879: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-03 11:42:25.866941: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-03 11:42:25.868246: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-03 11:42:25.869396: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-03 11:42:25.871929: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-03 11:42:25.874391: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-03 11:42:25.876940: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-03 11:42:25.887047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-03 11:42:25.888143: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-03 11:42:26.187062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-03 11:42:26.188182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-03 11:42:26.189053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-03 11:42:26.215736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10479 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2021-06-03 11:42:26.219177: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5632cce11de0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-03 11:42:26.222703: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+WARNING:tensorflow:From /srv/beegfs02/scratch/hdr_night/data/hdr_night/DPED/vgg.py:49: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From train_model.py:88: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Initializing variables
+Loading validation data...
+Validation data was loaded
+
+Loading training data...
+Training data was loaded
+
+Training network
+2021-06-03 12:06:36.962765: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-03 12:06:38.213746: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-06-03 12:06:38.293755: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-03 12:06:40.715079: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-03 12:06:40.818491: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.34GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-06-03 12:06:41.556141: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+step 0 generator losses | train: 0.5995, val: 657.9 | content: 12.03, color: 6459, tv: 1.103e-05 | psnr: 11.19, ms-ssim: 0.4437
+
+step 1000 generator losses | train: 100.9, val: 95.36 | content: 12.17, color: 830.3, tv: 0.0004186 | psnr: 18.93, ms-ssim: 0.8467
+
+step 2000 generator losses | train: 71.75, val: 61.51 | content: 11.21, color: 501.1, tv: 0.0004738 | psnr: 20.59, ms-ssim: 0.8731
+
+step 3000 generator losses | train: 65.67, val: 55.92 | content: 10.09, color: 456, tv: 0.0005929 | psnr: 21, ms-ssim: 0.8888
+
+step 4000 generator losses | train: 61.85, val: 55.49 | content: 9.505, color: 457.4, tv: 0.0006032 | psnr: 21.17, ms-ssim: 0.8966
+
+step 5000 generator losses | train: 59.7, val: 52.03 | content: 9.009, color: 427.2, tv: 0.0007463 | psnr: 21.48, ms-ssim: 0.9061
+
+step 6000 generator losses | train: 57.76, val: 76.37 | content: 8.958, color: 670.8, tv: 0.0008335 | psnr: 20.41, ms-ssim: 0.9065
+
+step 7000 generator losses | train: 56.06, val: 55.6 | content: 8.295, color: 468.9, tv: 0.001028 | psnr: 21.46, ms-ssim: 0.9156
+
+step 8000 generator losses | train: 55.49, val: 52.51 | content: 8.233, color: 439.2, tv: 0.0008889 | psnr: 21.55, ms-ssim: 0.9154
+
+step 9000 generator losses | train: 53.72, val: 51.19 | content: 7.795, color: 430.2, tv: 0.0009383 | psnr: 21.67, ms-ssim: 0.918
+
+step 10000 generator losses | train: 51.79, val: 49.6 | content: 7.543, color: 416.4, tv: 0.001031 | psnr: 21.9, ms-ssim: 0.9217
+
+step 11000 generator losses | train: 51.21, val: 51.83 | content: 7.387, color: 440.1, tv: 0.001079 | psnr: 21.8, ms-ssim: 0.9209
+
+step 12000 generator losses | train: 50.46, val: 54.51 | content: 7.295, color: 467.5, tv: 0.001166 | psnr: 21.7, ms-ssim: 0.9224
+
+step 13000 generator losses | train: 50.13, val: 51.09 | content: 7.066, color: 435.4, tv: 0.0012 | psnr: 21.77, ms-ssim: 0.9245
+
+step 14000 generator losses | train: 49.68, val: 51.29 | content: 7.344, color: 435, tv: 0.001105 | psnr: 21.84, ms-ssim: 0.9229
+
+step 15000 generator losses | train: 49.23, val: 51.8 | content: 6.855, color: 444.6, tv: 0.001195 | psnr: 21.88, ms-ssim: 0.926
+
+step 16000 generator losses | train: 47.07, val: 54.61 | content: 6.855, color: 472.7, tv: 0.001232 | psnr: 21.58, ms-ssim: 0.925
+
+step 17000 generator losses | train: 48.16, val: 51.91 | content: 6.722, color: 447.2, tv: 0.001172 | psnr: 21.85, ms-ssim: 0.9257
+
+step 18000 generator losses | train: 47, val: 51.44 | content: 6.702, color: 443, tv: 0.001107 | psnr: 21.79, ms-ssim: 0.9238
+
+step 19000 generator losses | train: 45.98, val: 50.89 | content: 6.624, color: 437.8, tv: 0.001226 | psnr: 21.88, ms-ssim: 0.9255
+
+step 20000 generator losses | train: 45.67, val: 51.67 | content: 6.646, color: 445.1, tv: 0.001291 | psnr: 21.82, ms-ssim: 0.9266
+
+total train/eval time: 13:35:02.247126

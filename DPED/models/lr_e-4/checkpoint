@@ -1,0 +1,8 @@
+model_checkpoint_path: "iteration_30000.ckpt"
+all_model_checkpoint_paths: "iteration_24000.ckpt"
+all_model_checkpoint_paths: "iteration_25000.ckpt"
+all_model_checkpoint_paths: "iteration_26000.ckpt"
+all_model_checkpoint_paths: "iteration_27000.ckpt"
+all_model_checkpoint_paths: "iteration_28000.ckpt"
+all_model_checkpoint_paths: "iteration_29000.ckpt"
+all_model_checkpoint_paths: "iteration_30000.ckpt"

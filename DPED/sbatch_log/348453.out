@@ -1,0 +1,9 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Traceback (most recent call last):
+  File "test_model.py", line 23, in <module>
+    IMAGE_HEIGHT, IMAGE_WIDTH, IMAGE_SIZE = utils.get_specified_res(res_sizes, phone, resolution)
+  File "/srv/beegfs02/scratch/hdr_night/data/hdr_night/DPED/utils.py", line 194, in get_specified_res
+    IMAGE_HEIGHT = res_sizes[phone][0]
+KeyError: 'test_images'

@@ -1,0 +1,441 @@
+WARNING:tensorflow:From /itet-stor/ollehman/net_scratch/conda_envs/tencu10/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-05-24 12:58:33.923213: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-24 12:58:34.038078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:05:00.0
+2021-05-24 12:58:34.048730: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-24 12:58:34.079082: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-24 12:58:34.132789: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-24 12:58:34.149024: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-24 12:58:34.160688: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-24 12:58:34.165178: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-24 12:58:34.184152: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-24 12:58:34.207085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-24 12:58:34.208468: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2021-05-24 12:58:34.240180: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199920000 Hz
+2021-05-24 12:58:34.241605: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d8b8c631f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-24 12:58:34.242630: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-24 12:58:34.246264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:05:00.0
+2021-05-24 12:58:34.247235: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-24 12:58:34.248324: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-24 12:58:34.249367: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-24 12:58:34.250433: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-24 12:58:34.251551: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-24 12:58:34.253315: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-24 12:58:34.254382: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-24 12:58:34.266771: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-24 12:58:34.267817: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-24 12:58:34.570422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-24 12:58:34.571412: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-05-24 12:58:34.572365: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-05-24 12:58:34.579466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11437 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2021-05-24 12:58:34.584067: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d8b9bf3790 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-24 12:58:34.585138: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+iteration 49000, processing image 579.png
+2021-05-24 12:58:38.137316: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-24 12:58:39.458987: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-05-24 12:58:39.530803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Lossy conversion from float32 to uint8. Range [-0.0019530653953552246, 0.5981806516647339]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3000.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2901.png
+Lossy conversion from float32 to uint8. Range [-0.00944662094116211, 0.8705358505249023]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 761.png
+Lossy conversion from float32 to uint8. Range [0.011596739292144775, 1.021918773651123]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3035.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2147.png
+Lossy conversion from float32 to uint8. Range [0.026215076446533203, 1.0314288139343262]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1518.png
+Lossy conversion from float32 to uint8. Range [-0.0058283209800720215, 0.8437153697013855]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 889.png
+Lossy conversion from float32 to uint8. Range [0.04978564381599426, 1.0169131755828857]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1932.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2789.png
+Lossy conversion from float32 to uint8. Range [-0.004738986492156982, 0.6552009582519531]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1937.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2035.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1097.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 186.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 950.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1471.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2251.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1341.png
+Lossy conversion from float32 to uint8. Range [-0.012204766273498535, 0.7665590047836304]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2036.png
+Lossy conversion from float32 to uint8. Range [-0.0036618709564208984, 0.8229260444641113]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3057.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2846.png
+Lossy conversion from float32 to uint8. Range [0.004188030958175659, 1.0698950290679932]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1323.png
+Lossy conversion from float32 to uint8. Range [-0.0012151002883911133, 0.9970059394836426]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1650.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3043.png
+Lossy conversion from float32 to uint8. Range [-0.020944833755493164, 0.8567988872528076]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 590.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2057.png
+Lossy conversion from float32 to uint8. Range [-0.018870890140533447, 0.9985790252685547]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 634.png
+Lossy conversion from float32 to uint8. Range [-0.03764522075653076, 1.0113189220428467]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 933.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 646.png
+Lossy conversion from float32 to uint8. Range [-0.021095991134643555, 0.9755293130874634]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2802.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2935.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1987.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3091.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1054.png
+Lossy conversion from float32 to uint8. Range [0.0019564926624298096, 1.0519993305206299]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 276.png
+Lossy conversion from float32 to uint8. Range [-0.010005474090576172, 0.8344134092330933]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1378.png
+Lossy conversion from float32 to uint8. Range [-0.021818101406097412, 0.7405654788017273]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2103.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 501.png
+Lossy conversion from float32 to uint8. Range [0.010638624429702759, 1.0419907569885254]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 407.png
+Lossy conversion from float32 to uint8. Range [-0.025668799877166748, 1.0200045108795166]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 885.png
+Lossy conversion from float32 to uint8. Range [0.10158029198646545, 1.0104682445526123]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1994.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2675.png
+Lossy conversion from float32 to uint8. Range [0.12397706508636475, 1.0346624851226807]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1591.png
+Lossy conversion from float32 to uint8. Range [-0.013182282447814941, 0.8570157289505005]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2821.png
+Lossy conversion from float32 to uint8. Range [-0.02291041612625122, 0.9371997117996216]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 319.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2026.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3093.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 361.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 358.png
+Lossy conversion from float32 to uint8. Range [0.11689794063568115, 1.0056700706481934]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 41.png
+Lossy conversion from float32 to uint8. Range [-0.009222686290740967, 0.9598119258880615]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1166.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2727.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1878.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 613.png
+Lossy conversion from float32 to uint8. Range [0.10796657204627991, 1.0406795740127563]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1502.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 183.png
+Lossy conversion from float32 to uint8. Range [-0.009900808334350586, 0.5958781838417053]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 836.png
+Lossy conversion from float32 to uint8. Range [-0.004317104816436768, 0.872185230255127]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 5.png
+Lossy conversion from float32 to uint8. Range [0.05900779366493225, 1.0219875574111938]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 173.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2233.png
+Lossy conversion from float32 to uint8. Range [-0.0029271841049194336, 0.8912899494171143]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2263.png
+Lossy conversion from float32 to uint8. Range [-0.00647735595703125, 1.0157655477523804]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3062.png
+Lossy conversion from float32 to uint8. Range [-0.001315474510192871, 0.683795690536499]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 930.png
+Lossy conversion from float32 to uint8. Range [-0.009390294551849365, 0.8636382818222046]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2926.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1781.png
+Lossy conversion from float32 to uint8. Range [-0.010431766510009766, 0.8969813585281372]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2739.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3088.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 687.png
+Lossy conversion from float32 to uint8. Range [0.003176480531692505, 1.0422407388687134]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 862.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 396.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1465.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1213.png
+Lossy conversion from float32 to uint8. Range [0.0045008063316345215, 1.0247937440872192]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2860.png
+Lossy conversion from float32 to uint8. Range [0.6375148892402649, 1.0426487922668457]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2945.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3096.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2363.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 6.png
+Lossy conversion from float32 to uint8. Range [0.015831440687179565, 1.0096616744995117]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 624.png
+Lossy conversion from float32 to uint8. Range [-0.0030679702758789062, 0.940078616142273]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 179.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 143.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 592.png
+Lossy conversion from float32 to uint8. Range [0.008573085069656372, 1.0050029754638672]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2654.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1947.png
+Lossy conversion from float32 to uint8. Range [-0.010847866535186768, 0.8238977193832397]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2264.png
+Lossy conversion from float32 to uint8. Range [-0.02509474754333496, 1.0175597667694092]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1892.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3125.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 304.png
+Lossy conversion from float32 to uint8. Range [-0.00625985860824585, 0.7240095138549805]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 420.png
+Lossy conversion from float32 to uint8. Range [0.6474538445472717, 1.012107014656067]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2683.png
+Lossy conversion from float32 to uint8. Range [0.04963603615760803, 1.0283091068267822]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 216.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1324.png
+Lossy conversion from float32 to uint8. Range [-0.009268045425415039, 1.0045945644378662]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 278.png
+Lossy conversion from float32 to uint8. Range [-0.026250243186950684, 0.8738017082214355]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 196.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1556.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 735.png
+Lossy conversion from float32 to uint8. Range [-0.001057446002960205, 0.9839110374450684]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2250.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1923.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2213.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1675.png
+Lossy conversion from float32 to uint8. Range [0.09829512238502502, 1.0364296436309814]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2308.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1672.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 258.png
+Lossy conversion from float32 to uint8. Range [0.011413544416427612, 1.0159566402435303]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2678.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1617.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2391.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 740.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2725.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 219.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1724.png
+Lossy conversion from float32 to uint8. Range [-0.0190466046333313, 0.8276538252830505]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2073.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3117.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1365.png
+Lossy conversion from float32 to uint8. Range [-0.020899593830108643, 1.0273997783660889]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1844.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1933.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 936.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2168.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 348.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1132.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 0.png
+Lossy conversion from float32 to uint8. Range [0.06346076726913452, 1.0095593929290771]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1182.png
+Lossy conversion from float32 to uint8. Range [0.052601397037506104, 1.0043247938156128]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2631.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 367.png
+Lossy conversion from float32 to uint8. Range [0.032331615686416626, 1.0598223209381104]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 668.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 69.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2438.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2492.png
+Lossy conversion from float32 to uint8. Range [-0.01051110029220581, 0.9391166567802429]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 684.png
+Lossy conversion from float32 to uint8. Range [0.02680915594100952, 1.0400373935699463]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 308.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2365.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2564.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 530.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 734.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1136.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 50.png
+Lossy conversion from float32 to uint8. Range [-0.015788018703460693, 0.8179104924201965]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2132.png
+Lossy conversion from float32 to uint8. Range [-0.012623906135559082, 0.9581553936004639]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 499.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 48.png
+Lossy conversion from float32 to uint8. Range [-0.0006081461906433105, 1.0444281101226807]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2731.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1920.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2151.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1935.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1274.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2064.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 432.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1792.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2204.png
+Lossy conversion from float32 to uint8. Range [-0.006803691387176514, 1.0163493156433105]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1639.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1488.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 903.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1470.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2262.png
+Lossy conversion from float32 to uint8. Range [-0.010607659816741943, 0.68192058801651]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1764.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1575.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1908.png
+Lossy conversion from float32 to uint8. Range [0.045318663120269775, 1.0196372270584106]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1107.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1325.png
+Lossy conversion from float32 to uint8. Range [-0.01150280237197876, 0.7510819435119629]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1071.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 700.png
+Lossy conversion from float32 to uint8. Range [-0.024127066135406494, 1.0251109600067139]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1912.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1173.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2902.png
+Lossy conversion from float32 to uint8. Range [-0.0060158371925354, 0.6478614211082458]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2320.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 595.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2052.png
+Lossy conversion from float32 to uint8. Range [-0.0003712773323059082, 0.6173595190048218]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 436.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 274.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2311.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1472.png
+Lossy conversion from float32 to uint8. Range [-0.005542755126953125, 0.9798606634140015]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1695.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1203.png
+Lossy conversion from float32 to uint8. Range [-0.007456600666046143, 0.7579554319381714]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2909.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1196.png
+Lossy conversion from float32 to uint8. Range [-0.017828524112701416, 0.8108242750167847]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1687.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2100.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2792.png
+Lossy conversion from float32 to uint8. Range [-0.005564749240875244, 0.9405076503753662]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2082.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2197.png
+Lossy conversion from float32 to uint8. Range [0.045261502265930176, 1.0210120677947998]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 549.png
+Lossy conversion from float32 to uint8. Range [0.06508296728134155, 1.000623345375061]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2797.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 841.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1678.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2658.png
+Lossy conversion from float32 to uint8. Range [0.024075984954833984, 1.0393346548080444]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1424.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 754.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 457.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 433.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1224.png
+Lossy conversion from float32 to uint8. Range [-0.004591464996337891, 0.912009596824646]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 3044.png
+Lossy conversion from float32 to uint8. Range [-0.025166690349578857, 0.6661795973777771]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 229.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1235.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1322.png
+Lossy conversion from float32 to uint8. Range [-0.0005694031715393066, 1.0084667205810547]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1855.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2833.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2832.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1513.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2152.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2172.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 1572.png
+Lossy conversion from float32 to uint8. Range [0.011136293411254883, 1.0340580940246582]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2184.png
+Lossy conversion from float32 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+iteration 49000, processing image 2922.png
+Lossy conversion from float32 to uint8. Range [0.014841526746749878, 1.0184383392333984]. Convert image to uint8 prior to saving to suppress this warning.
